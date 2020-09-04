@@ -20,6 +20,123 @@
     <title>Treasure Hunt</title>
   </head>
   <body>
+    <div class="container" id="heading-text">
+      <div class="row">
+        <div class="col-12">
+          <h1>Treasure Hunt</h1>
+        </div>
+      </div>
+    </div>
 
+    <div class="container game-screen">
+      <div class="row">
+        <div class="col">
+          <div class="container" id="welcome-page-rules">
+            <h2>Welcome to your Treasure Hunt journey!</h2>
+            <p class="info-text">
+              Treasure Hunt will test your knowledge of the high seas and give
+              you clues to help you identify where the treasure is hidden. You
+              will have to navigate the questions which will provide clues as to
+              where the treasure is hidden. Once you've got these clues you will
+              need to use your trusty map to identify the treasure's location.
+              Beware though, if you get the location wrong your crew will make
+              you walk the plank!
+            </p>
+            <form>
+              <div class="form-group">
+                <label id="captain-name-label"
+                  >Enter your name below, Captain, then click below to set sail!
+                  <input
+                    type="text"
+                    id="captain-name-typed"
+                    name="captainName"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="form-group">
+                <button id="next-welcome-button">Start your journey!</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col">
+          <div class="container" id="welcome-page-story">
+            <div class="welcomeCaptain captain-text">
+              Welcome Captain captainName!
+            </div>
+            <p class="info-text">
+              You have set sail on your famous ship with your crew. Everyone
+              sailing on these seas fear you. Your First Mate has just handed
+              you some clues that he found on your last stop. You all believe
+              that getting these clues will be vital to finding the hidden
+              treasure that you've been searching for years to get your hands
+              (and hooks) on. Good luck!
+            </p>
+            <button id="start-game">Onto the clues!</button>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="container" id="question-page">
+            <div class="question">Question</div>
+            <button class="answer-button">Answer A</button>
+            <button class="answer-button">Answer B</button>
+            <button class="answer-button">Answer C</button>
+            <div class="correct-answers">
+              <h3>Correct answers:</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="container" id="map-page">
+            <h2 class="captain-text">Great work Captain captainName!</h2>
+            <p class="info-text">
+              Hopefully you've worked out some clues. These clues should point
+              you towards the treasure's location. Locate it on the map below
+              and it'll all be yours. Be careful though, if you choose the wrong
+              location you'll have to walk the plank!
+            </p>
+            <div class="container-fluid" id="map"></div>
+            <div class="correct-answers">
+              <h3>Correct answers:</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="container" id="final-page">
+            <div class="yesCaptain">
+              <h2 class="captain-text">You did it Captain captainName!</h2>
+              <img src="assets/img/treasure.png" alt="pirate treasure chest" />
+            </div>
+
+            <div class="noCaptain">
+              <h2 class="captain-text">
+                Your crew are angry. It's the plank for you Captain captainName!
+                If you're lucky you can row back to shore.
+              </h2>
+              <img src="assets/img/pirate-row-boat.png" alt="pirate row boat" />
+            </div>
+            <button id="restart">Play again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid"></footer>
+    <!-- jQuery, JS & Maps API -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4snhK9XRtrCsJFx4qC_jF1-p_VC99Z8c&callback=initMap"
+    ></script>
+    <script src="assets/js/maps.js"></script>
   </body>
 </html>
