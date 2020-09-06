@@ -28,10 +28,10 @@
       </div>
     </div>
 
-    <div class="container game-screen">
+    <div class="container" id="game-screen">
       <div class="row">
-        <div class="col">
-          <div class="container" id="welcome-page-rules">
+        <div class="col" id="welcome-page-rules">
+          <div class="container">
             <h2>Welcome to your Treasure Hunt journey!</h2>
             <p class="info-text">
               Treasure Hunt will test your knowledge of the high seas and give
@@ -44,27 +44,28 @@
             </p>
             <form>
               <div class="form-group">
-                <label id="captain-name-label"
-                  >Enter your name below, Captain, then click below to set sail!
+                <h2>
+                  Enter your name below, Captain, then click below to set sail!
+                </h2>
                   <input
                     type="text"
                     id="captain-name-typed"
-                    name="captainName"
-                    required
                   />
-                </label>
+                <p id="missingName"></p>
               </div>
               <div class="form-group">
-                <button id="next-welcome-button">Start your journey!</button>
+                <button id="start-btn" type="button">
+                  Start your journey!
+                </button>
               </div>
             </form>
           </div>
         </div>
-        <div class="col">
-          <div class="container" id="welcome-page-story">
-            <div class="welcomeCaptain captain-text">
-              Welcome Captain captainName!
-            </div>
+        <div class="col hide" id="welcome-page-story">
+          <div class="container">
+            <h2 class="captain-text"> 
+              Welcome Captain <span id="captainName"></span>!
+            </h2>
             <p class="info-text">
               You have set sail on your famous ship with your crew. Everyone
               sailing on these seas fear you. Your First Mate has just handed
@@ -73,23 +74,52 @@
               treasure that you've been searching for years to get your hands
               (and hooks) on. Good luck!
             </p>
-            <button id="start-game">Onto the clues!</button>
+            <button id="start-game-easy" class="start-game-btn">Easy</button>
+            <button id="start-game-med" class="start-game-btn">Medium</button>
+            <button id="start-game-hard" class="start-game-btn">Hard</button>
           </div>
         </div>
 
-        <div class="col">
-          <div class="container" id="question-page">
-            <div class="question">Question</div>
-            <button class="answer-button">Answer A</button>
-            <button class="answer-button">Answer B</button>
-            <button class="answer-button">Answer C</button>
+        <div class="col hide" id="question-page-easy">
+          <div class="container">
+            <h3 id="easy-question"></h3>
+            <button class="answer-button" id="easyA"></button>
+            <button class="answer-button" id="easyB"></button>
+            <button class="answer-button" id="easyC"></button>
             <div class="correct-answers">
               <h3>Correct answers:</h3>
+              <p id="easy-correct"></p>
             </div>
           </div>
         </div>
 
-        <div class="col">
+        <div class="col hide" id="question-page-med">
+          <div class="container">
+            <h3 id="med-question"></h3>
+            <button class="answer-button" id="medA"></button>
+            <button class="answer-button" id="medB"></button>
+            <button class="answer-button" id="medC"></button>
+            <div class="correct-answers">
+              <h3>Correct answers:</h3>
+              <p id="med-correct"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col hide" id="question-page-hard">
+          <div class="container">
+            <h3 id="hard-question"></h3>
+            <button class="answer-button" id="hardA"></button>
+            <button class="answer-button" id="hardB"></button>
+            <button class="answer-button" id="hardC"></button>
+            <div class="correct-answers">
+              <h3>Correct answers:</h3>
+              <p id="hard-correct"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col hide">
           <div class="container" id="map-page">
             <h2 class="captain-text">Great work Captain captainName!</h2>
             <p class="info-text">
@@ -104,7 +134,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col hide">
           <div class="container" id="final-page">
             <div class="yesCaptain">
               <h2 class="captain-text">You did it Captain captainName!</h2>
@@ -138,5 +168,6 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4snhK9XRtrCsJFx4qC_jF1-p_VC99Z8c&callback=initMap"
     ></script>
     <script src="assets/js/maps.js"></script>
+    <script src="assets/js/game.js"></script>
   </body>
 </html>
