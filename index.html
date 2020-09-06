@@ -86,10 +86,6 @@
             <button class="answer-button" id="easyA"></button>
             <button class="answer-button" id="easyB"></button>
             <button class="answer-button" id="easyC"></button>
-            <div class="correct-answers">
-              <h3>Correct answers:</h3>
-              <p id="easy-correct"></p>
-            </div>
           </div>
         </div>
 
@@ -99,10 +95,6 @@
             <button class="answer-button" id="medA"></button>
             <button class="answer-button" id="medB"></button>
             <button class="answer-button" id="medC"></button>
-            <div class="correct-answers">
-              <h3>Correct answers:</h3>
-              <p id="med-correct"></p>
-            </div>
           </div>
         </div>
 
@@ -112,16 +104,12 @@
             <button class="answer-button" id="hardA"></button>
             <button class="answer-button" id="hardB"></button>
             <button class="answer-button" id="hardC"></button>
-            <div class="correct-answers">
-              <h3>Correct answers:</h3>
-              <p id="hard-correct"></p>
-            </div>
           </div>
         </div>
 
-        <div class="col hide">
-          <div class="container" id="map-page">
-            <h2 class="captain-text">Great work Captain captainName!</h2>
+        <div class="col hide" id="map-page">
+          <div class="container">
+            <h2 class="captain-text">Great work Captain!</h2>
             <p class="info-text">
               Hopefully you've worked out some clues. These clues should point
               you towards the treasure's location. Locate it on the map below
@@ -129,9 +117,6 @@
               location you'll have to walk the plank!
             </p>
             <div class="container-fluid" id="map"></div>
-            <div class="correct-answers">
-              <h3>Correct answers:</h3>
-            </div>
           </div>
         </div>
         <div class="col hide">
@@ -153,6 +138,10 @@
         </div>
       </div>
     </div>
+    <div class="container" id="correct-answers">
+              <h3>Correct answers:</h3>
+              <p id="easy-correct med-correct hard-correct"></p>
+            </div>
 
     <footer class="container-fluid"></footer>
     <!-- jQuery, JS & Maps API -->
