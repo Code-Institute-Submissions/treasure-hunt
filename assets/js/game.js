@@ -19,14 +19,14 @@ $(document).ready(function () {
 
 
   $(startBtn).click(function () {
-      captainName = document.getElementById('captain-name-typed').value;
-      if (captainName.length === 0) {
-          $("#missingName").text("Please enter your name");
-      } else {
-    $(welcomePageRules).addClass("hide");
-    $(welcomePageStory).removeClass("hide");
-    document.getElementById('captainName').innerHTML = captainName;
-    runWelcomePageStory();
+    captainName = document.getElementById("captain-name-typed").value;
+    if (captainName.length === 0) {
+      $("#missingName").text("Please enter your name");
+    } else {
+      $(welcomePageRules).addClass("hide");
+      $(welcomePageStory).removeClass("hide");
+      document.getElementById("captainName").innerHTML = captainName;
+      runWelcomePageStory();
     }
   });
 
@@ -36,6 +36,7 @@ $(document).ready(function () {
       shuffleEasyQuestions = questionEasy.sort(() => Math.random() - 0.5);
       currentEasyQuestion = 0;
       $(easyQuestionPage).removeClass("hide");
+      $("#correct-answers").removeClass("hide");
       nextEasyQuestion();
     });
   }
@@ -46,64 +47,62 @@ $(document).ready(function () {
 
   function showEasyQuestion(question) {
     thisEasyQuestion = {
-    q: shuffleEasyQuestions[level].question,
-    a: shuffleEasyQuestions[level].easyA,
-    b: shuffleEasyQuestions[level].easyB,
-    c: shuffleEasyQuestions[level].easyC,
-    correct: shuffleEasyQuestions[level].correct
+      q: shuffleEasyQuestions[level].question,
+      a: shuffleEasyQuestions[level].easyA,
+      b: shuffleEasyQuestions[level].easyB,
+      c: shuffleEasyQuestions[level].easyC,
+      cor: shuffleEasyQuestions[level].correct,
     };
 
-        $("#easy-question").text(thisEasyQuestion.q);
-        $("#easyA").text(thisEasyQuestion.a);
-        $("#easyB").text(thisEasyQuestion.b);
-        $("#easyC").text(thisEasyQuestion.c);
-       
-
+    $("#easy-question").text(thisEasyQuestion.q);
+    $("#easyA").text(thisEasyQuestion.a);
+    $("#easyB").text(thisEasyQuestion.b);
+    $("#easyC").text(thisEasyQuestion.c);
   }
 
-  $('.answer-button').click(
-    function() {
-        const chosenAnswer = this.value;
-        if (level === 2) {
-            $(easyQuestionPage).addClass("hide");
-            $("#map-page").removeClass("hide");
-        } else {
-            $('#easy-correct').text(`${thisEasyQuestion.correct}`);
-            if (chosenAnswer == thisEasyQuestion.correct) {
-                
-                level = level + 1;
-                nextEasyQuestion();
-            } else {
-                level = level + 1;
-                nextEasyQuestion();
-            }
-        }
+
+  $(".easy-answer-button").on("click", function () {
+    const chosenAnswer = this.id;
+    if (chosenAnswer == thisEasyQuestion.cor) {
+      $("#easy-correct").append(`${thisEasyQuestion.cor} `);
+    } else {
+      console.log("wrong");
     }
-);
+    if (level === 2) {
+      $(easyQuestionPage).addClass("hide");
+      $("#map-page").removeClass("hide");
+      
+    } else {
+      level = level + 1;
+      nextEasyQuestion();
+    }
+  });
+
+  
 
   // ------ QUESTIONS ------
 
   const questionEasy = [
     {
       question: "Easy question 1",
-      "easyA": "easy answer 1",
-      "easyB": "easy answer 2",
-      "easyC": "easy answer 3",
-      "correct": "easyA"
+      easyA: "easy answer 1",
+      easyB: "easy answer 2",
+      easyC: "easy answer 3",
+      correct: "easyA",
     },
     {
       question: "Easy question 2",
-      "easyA": "easy answer 1",
-      "easyB": "easy answer 2",
-      "easyC": "easy answer 3",
-      "correct": "easyB"
+      easyA: "easy answer 1",
+      easyB: "easy answer 2",
+      easyC: "easy answer 3",
+      correct: "easyB",
     },
     {
       question: "Easy question 3",
-      "easyA": "easy answer 1",
-      "easyB": "easy answer 2",
-      "easyC": "easy answer 3",
-      "correct": "easyC"
+      easyA: "easy answer 1",
+      easyB: "easy answer 2",
+      easyC: "easy answer 3",
+      correct: "easyC",
     },
   ];
 
