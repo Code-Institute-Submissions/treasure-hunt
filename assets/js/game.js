@@ -39,13 +39,23 @@ $(document).ready(function () {
       $("#correct-answers").removeClass("hide");
       nextEasyQuestion();
     });
+    $(medClues).click(function () {
+      $(welcomePageStory).addClass("hide");
+      shuffleMedQuestions = questionMed.sort(() => Math.random() - 0.5);
+      currentMedQuestion = 0;
+      $(medQuestionPage).removeClass("hide");
+      $("#correct-answers").removeClass("hide");
+      nextMedQuestion();
+    });
   }
+
+//   --------- Easy Questions ----------
 
   function nextEasyQuestion() {
     showEasyQuestion(shuffleEasyQuestions[currentEasyQuestion]);
   }
 
-  function showEasyQuestion(question) {
+  function showEasyQuestion(questionEasy) {
     thisEasyQuestion = {
       q: shuffleEasyQuestions[level].question,
       a: shuffleEasyQuestions[level].easyA,
@@ -62,23 +72,69 @@ $(document).ready(function () {
 
 
   $(".easy-answer-button").on("click", function () {
-    const chosenAnswer = this.id;
+    const chosenAnswer = this.id
+    const answerText = this.innerHTML
     if (chosenAnswer == thisEasyQuestion.cor) {
-      $("#easy-correct").append(`${thisEasyQuestion.cor} `);
+      $("#easy-correct").append(`${answerText} `);
     } else {
       console.log("wrong");
     }
     if (level === 2) {
       $(easyQuestionPage).addClass("hide");
       $("#map-page").removeClass("hide");
-      
+      initMap(easyMap);
     } else {
       level = level + 1;
       nextEasyQuestion();
     }
   });
 
-  
+//   --------- Med Questions ----------
+
+// function nextMedQuestion() {
+//     showMedQuestion(shuffleMedQuestions[currentMedQuestion]);
+//   }
+
+//   function showMedQuestion(question) {
+//     thisMedQuestion = {
+//       q: shuffleEasyQuestions[level].question,
+//       a: shuffleEasyQuestions[level].easyA,
+//       b: shuffleEasyQuestions[level].easyB,
+//       c: shuffleEasyQuestions[level].easyC,
+//       cor: shuffleEasyQuestions[level].correct,
+//     };
+
+//     $("#easy-question").text(thisEasyQuestion.q);
+//     $("#easyA").text(thisEasyQuestion.a);
+//     $("#easyB").text(thisEasyQuestion.b);
+//     $("#easyC").text(thisEasyQuestion.c);
+//   }
+
+
+//   $(".easy-answer-button").on("click", function () {
+//     const chosenAnswer = this.id;
+//     console.log(thisEasyQuestion)
+//     if (chosenAnswer == thisEasyQuestion.cor) {
+//       $("#easy-correct").append(`${thisEasyQuestion.cor} `);
+// //    $("#easy-correct").append(`${thisEasyQuestion[chosenAnswer]} `);
+//     } else {
+//       console.log("wrong");
+//     }
+//     if (level === 2) {
+//       $(easyQuestionPage).addClass("hide");
+//       $("#map-page").removeClass("hide");
+//       initMap(easyMap);
+//     } else {
+//       level = level + 1;
+//       nextEasyQuestion();
+//     }
+//   });
+
+  //   --------- Hard Questions ----------
+
+  $("#restart").on("click", function () {
+      window.location.reload();
+  })
 
   // ------ QUESTIONS ------
 
@@ -108,7 +164,6 @@ $(document).ready(function () {
 
   const questionMed = [
     {
-      id: 1,
       question: "Med question 1",
       answers: {
         a: "answer 1",
