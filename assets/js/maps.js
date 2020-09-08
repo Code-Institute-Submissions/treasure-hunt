@@ -69,14 +69,14 @@ function initMap() {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
     $("#final-page").removeClass("hide");
-    $("#yesCaptain").removeClass("hide");
+    $("#noCaptain").removeClass("hide");
   });
 
   markerJam.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
     $("#final-page").removeClass("hide");
-    $("#noCaptain").removeClass("hide");
+    $("#yesCaptain").removeClass("hide");
   });
   markerBar.addListener("click", () => {
     $("#map-page").addClass("hide");
@@ -175,7 +175,7 @@ function initMap() {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
     $("#final-page").removeClass("hide");
-    $("#noCaptain").removeClass("hide");
+    $("#yesCaptain").removeClass("hide");
   });
 
   markerAnt.addListener("click", () => {
@@ -255,7 +255,7 @@ function initMap() {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
     $("#final-page").removeClass("hide");
-    $("#noCaptain").removeClass("hide");
+    $("#yesCaptain").removeClass("hide");
   });
 
   markerJam.addListener("click", () => {
