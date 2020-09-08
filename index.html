@@ -47,10 +47,7 @@
                 <h2>
                   Enter your name below, Captain, then click below to set sail!
                 </h2>
-                  <input
-                    type="text"
-                    id="captain-name-typed"
-                  />
+                <input type="text" id="captain-name-typed" />
                 <p id="missingName"></p>
               </div>
               <div class="form-group">
@@ -63,7 +60,7 @@
         </div>
         <div class="col hide" id="welcome-page-story">
           <div class="container">
-            <h2 class="captain-text"> 
+            <h2 class="captain-text">
               Welcome Captain <span id="captainName"></span>!
             </h2>
             <p class="info-text">
@@ -83,18 +80,30 @@
         <div class="col hide" id="question-page-easy">
           <div class="container">
             <h3 id="easy-question"></h3>
-            <button class="answer-button" id="easyA"></button>
-            <button class="answer-button" id="easyB"></button>
-            <button class="answer-button" id="easyC"></button>
+            <button
+              class="easy-answer-button"
+              id="easyA"
+              value="easyA"
+            ></button>
+            <button
+              class="easy-answer-button"
+              id="easyB"
+              value="easyB"
+            ></button>
+            <button
+              class="easy-answer-button"
+              id="easyC"
+              value="easyC"
+            ></button>
           </div>
         </div>
 
         <div class="col hide" id="question-page-med">
           <div class="container">
             <h3 id="med-question"></h3>
-            <button class="answer-button" id="medA"></button>
-            <button class="answer-button" id="medB"></button>
-            <button class="answer-button" id="medC"></button>
+            <button class="med-answer-button" id="medA" value="medA"></button>
+            <button class="med-answer-button" id="medB" value="medB"></button>
+            <button class="med-answer-button" id="medC" value="medC"></button>
           </div>
         </div>
 
@@ -116,17 +125,18 @@
               and it'll all be yours. Be careful though, if you choose the wrong
               location you'll have to walk the plank!
             </p>
-            <div class="container-fluid" id="map"></div>
+            <div class="container-fluid hide" id="mapEasy"></div>
+            <div class="container-fluid hide" id="mapMed"></div>
           </div>
         </div>
-        <div class="col hide">
-          <div class="container" id="final-page">
-            <div class="yesCaptain">
-              <h2 class="captain-text">You did it Captain captainName!</h2>
+        <div class="col hide" id="final-page">
+          <div class="container">
+            <div class="hide" id="yesCaptain">
+              <h2 class="captain-text">You did it Captain!</h2>
               <img src="assets/img/treasure.png" alt="pirate treasure chest" />
             </div>
 
-            <div class="noCaptain">
+            <div class="hide" id="noCaptain">
               <h2 class="captain-text">
                 Your crew are angry. It's the plank for you Captain captainName!
                 If you're lucky you can row back to shore.
@@ -138,10 +148,10 @@
         </div>
       </div>
     </div>
-    <div class="container" id="correct-answers">
-              <h3>Correct answers:</h3>
-              <p id="easy-correct med-correct hard-correct"></p>
-            </div>
+    <div class="container hide" id="correct-answers">
+      <h3>Correct answers:</h3>
+      <p id="correct"></p>
+    </div>
 
     <footer class="container-fluid"></footer>
     <!-- jQuery, JS & Maps API -->
@@ -150,13 +160,13 @@
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/maps.js"></script>
+    <script src="assets/js/game.js"></script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script
       async
       defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4snhK9XRtrCsJFx4qC_jF1-p_VC99Z8c&callback=initMap"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSOm9ChOkYpWqfmV33bkmc79AoWUxMpWw&callback=initMap"
     ></script>
-    <script src="assets/js/maps.js"></script>
-    <script src="assets/js/game.js"></script>
   </body>
 </html>
