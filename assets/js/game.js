@@ -88,11 +88,11 @@ $(document).ready(function () {
     const chosenAnswer = this.id;
     const answerText = this.innerHTML;
     if (chosenAnswer == thisEasyQuestion.cor) {
-      $("#correct").append(`${answerText} `);
+      $("#correct").append(`${answerText}<br>`);
     } else {
       console.log("wrong");
     }
-    if (level === 2) {
+    if (level === 4) {
       $(easyQuestionPage).addClass("hide");
       $("#map-page").removeClass("hide");
       $("#mapEasy").removeClass("hide");
@@ -128,11 +128,11 @@ $(document).ready(function () {
     const chosenAnswer = this.id;
     const answerText = this.innerHTML;
     if (chosenAnswer == thisMedQuestion.cor) {
-      $("#correct").append(`${answerText} `);
+      $("#correct").append(`${answerText}<br>`);
     } else {
       console.log("wrong");
     }
-    if (level === 2) {
+    if (level === 4) {
       $(medQuestionPage).addClass("hide");
       $("#map-page").removeClass("hide");
       $("#mapMed").removeClass("hide");
@@ -168,11 +168,11 @@ $(document).ready(function () {
     const chosenAnswer = this.id;
     const answerText = this.innerHTML;
     if (chosenAnswer == thisHardQuestion.cor) {
-      $("#correct").append(`${answerText} `);
+      $("#correct").append(`${answerText}<br>`);
     } else {
       console.log("wrong");
     }
-    if (level === 2) {
+    if (level === 4) {
       $(hardQuestionPage).addClass("hide");
       $("#map-page").removeClass("hide");
       $("#mapHard").removeClass("hide");
@@ -187,78 +187,5 @@ $(document).ready(function () {
 
   $("#restart").on("click", function () {
     window.location.reload();
-  });
-
-  // ------ QUESTIONS ------
-
-  const questionEasy = [
-    {
-      question: "Easy question 1",
-      easyA: "easy answer 1",
-      easyB: "easy answer 2",
-      easyC: "easy answer 3",
-      correct: "easyA",
-    },
-    {
-      question: "Easy question 2",
-      easyA: "easy answer 1",
-      easyB: "easy answer 2",
-      easyC: "easy answer 3",
-      correct: "easyB",
-    },
-    {
-      question: "Easy question 3",
-      easyA: "easy answer 1",
-      easyB: "easy answer 2",
-      easyC: "easy answer 3",
-      correct: "easyC",
-    },
-  ];
-
-  const questionMed = [
-    {
-      question: "Medium question 1",
-      medA: "med answer 1",
-      medB: "med answer 2",
-      medC: "med answer 3",
-      correct: "medA",
-    },
-    {
-      question: "Medium question 2",
-      medA: "med answer 1",
-      medB: "med answer 2",
-      medC: "med answer 3",
-      correct: "medB",
-    },
-    {
-      question: "Medium question 3",
-      medA: "med answer 1",
-      medB: "med answer 2",
-      medC: "med answer 3",
-      correct: "medC",
-    },
-  ];
-  const questionHard = [
-    {
-      question: "Hard question 1",
-      hardA: "hard answer 1",
-      hardB: "hard answer 2",
-      hardC: "hard answer 3",
-      correct: "hardA",
-    },
-    {
-      question: "Hard question 2",
-      hardA: "hard answer 1",
-      hardB: "hard answer 2",
-      hardC: "hard answer 3",
-      correct: "hardB",
-    },
-    {
-      question: "Hard question 3",
-      hardA: "hard answer 1",
-      hardB: "hard answer 2",
-      hardC: "hard answer 3",
-      correct: "hardC",
-    },
-  ];
+  });  
 });
