@@ -16,11 +16,13 @@ $(document).ready(function () {
   var shuffleMedQuestions = [];
   var currentMedQuestion;
   var thisMedQuestion;
+  
+  var shuffleHardQuestions = [];
+  var currentHardQuestion;
+  var thisHardQuestion;
 
   var captainName;
   var level = 0;
-
-
 
   $(startBtn).click(function () {
     captainName = document.getElementById("captain-name-typed").value;
@@ -51,9 +53,17 @@ $(document).ready(function () {
       $("#correct-answers").removeClass("hide");
       nextMedQuestion();
     });
+    $(hardClues).click(function () {
+      $(welcomePageStory).addClass("hide");
+      shuffleHardQuestions = questionHard.sort(() => Math.random() - 0.5);
+      currentHardQuestion = 0;
+      $(hardQuestionPage).removeClass("hide");
+      $("#correct-answers").removeClass("hide");
+      nextHardQuestion();
+    });
   }
 
-//   --------- Easy Questions ----------
+  //   --------- Easy Questions ----------
 
   function nextEasyQuestion() {
     showEasyQuestion(shuffleEasyQuestions[currentEasyQuestion]);
@@ -74,10 +84,9 @@ $(document).ready(function () {
     $("#easyC").text(thisEasyQuestion.c);
   }
 
-
   $(".easy-answer-button").on("click", function () {
-    const chosenAnswer = this.id
-    const answerText = this.innerHTML
+    const chosenAnswer = this.id;
+    const answerText = this.innerHTML;
     if (chosenAnswer == thisEasyQuestion.cor) {
       $("#correct").append(`${answerText} `);
     } else {
@@ -94,10 +103,9 @@ $(document).ready(function () {
     }
   });
 
+  //   --------- Med Questions ----------
 
-//   --------- Med Questions ----------
-
-function nextMedQuestion() {
+  function nextMedQuestion() {
     showMedQuestion(shuffleMedQuestions[currentMedQuestion]);
   }
 
@@ -116,10 +124,9 @@ function nextMedQuestion() {
     $("#medC").text(thisMedQuestion.c);
   }
 
-
   $(".med-answer-button").on("click", function () {
     const chosenAnswer = this.id;
-    const answerText = this.innerHTML
+    const answerText = this.innerHTML;
     if (chosenAnswer == thisMedQuestion.cor) {
       $("#correct").append(`${answerText} `);
     } else {
@@ -138,9 +145,49 @@ function nextMedQuestion() {
 
   //   --------- Hard Questions ----------
 
+  function nextHardQuestion() {
+    showHardQuestion(shuffleHardQuestions[currentHardQuestion]);
+  }
+
+  function showHardQuestion(questionHard) {
+    thisHardQuestion = {
+      q: shuffleHardQuestions[level].question,
+      a: shuffleHardQuestions[level].hardA,
+      b: shuffleHardQuestions[level].hardB,
+      c: shuffleHardQuestions[level].hardC,
+      cor: shuffleHardQuestions[level].correct,
+    };
+
+    $("#hard-question").text(thisHardQuestion.q);
+    $("#hardA").text(thisHardQuestion.a);
+    $("#hardB").text(thisHardQuestion.b);
+    $("#hardC").text(thisHardQuestion.c);
+  }
+
+  $(".hard-answer-button").on("click", function () {
+    const chosenAnswer = this.id;
+    const answerText = this.innerHTML;
+    if (chosenAnswer == thisHardQuestion.cor) {
+      $("#correct").append(`${answerText} `);
+    } else {
+      console.log("wrong");
+    }
+    if (level === 2) {
+      $(hardQuestionPage).addClass("hide");
+      $("#map-page").removeClass("hide");
+      $("#mapHard").removeClass("hide");
+      initMap();
+    } else {
+      level = level + 1;
+      nextHardQuestion();
+    }
+  });
+
+  //   -------- restart button ----------
+
   $("#restart").on("click", function () {
-      window.location.reload();
-  })
+    window.location.reload();
+  });
 
   // ------ QUESTIONS ------
 
@@ -168,7 +215,7 @@ function nextMedQuestion() {
     },
   ];
 
-    const questionMed = [
+  const questionMed = [
     {
       question: "Medium question 1",
       medA: "med answer 1",
@@ -193,14 +240,25 @@ function nextMedQuestion() {
   ];
   const questionHard = [
     {
-      id: 1,
       question: "Hard question 1",
-      answers: {
-        a: "answer 1",
-        b: "answer 2",
-        c: "answer 3",
-      },
-      correctAnswer: "c",
+      hardA: "hard answer 1",
+      hardB: "hard answer 2",
+      hardC: "hard answer 3",
+      correct: "hardA",
+    },
+    {
+      question: "Hard question 2",
+      hardA: "hard answer 1",
+      hardB: "hard answer 2",
+      hardC: "hard answer 3",
+      correct: "hardB",
+    },
+    {
+      question: "Hard question 3",
+      hardA: "hard answer 1",
+      hardB: "hard answer 2",
+      hardC: "hard answer 3",
+      correct: "hardC",
     },
   ];
 });
