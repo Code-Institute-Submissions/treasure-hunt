@@ -126,21 +126,6 @@ const questionMed = [
 
 // Bermuda - Hard
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const questionHard = [
   {
     question: "Which musical by Lin-Manuel Miranda is mostly sung and rapped throughout?",
