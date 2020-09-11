@@ -24,11 +24,13 @@ $(document).ready(function () {
   var captainName;
   var level = 0;
 
-   $("#heading-text--treasure").hover(function() {
-  $("#heading-text--treasure").css('cursor', 'pointer');
+  $("#heading-logo--gif").removeClass("hide");
+
+   $("#heading-logo--gif").hover(function() {
+  $("#heading-logo--gif").css('cursor', 'pointer');
    });
 
-  $("#heading-text--treasure").click(function() {
+  $("#heading-logo--gif").click(function() {
       $("#headingTextModal").modal("show");
   });
 
@@ -43,6 +45,8 @@ $(document).ready(function () {
     } else {
       $(welcomePageRules).addClass("hide");
       $(welcomePageStory).removeClass("hide");
+        $("#heading-logo--gif").addClass("hide");
+          $("#heading-logo--png").removeClass("hide");
       document.getElementById("captainName").innerHTML = captainName;
       runWelcomePageStory();
     }
