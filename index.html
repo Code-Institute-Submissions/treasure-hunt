@@ -23,12 +23,35 @@
     <div class="container" id="heading-text">
       <div class="row">
         <div class="col-12">
-          <h1>Treasure Hunt</h1>
+          <h1 class="text-center" id="heading-text--treasure">Treasure Hunt</h1>
         </div>
       </div>
     </div>
 
-    <div class="container" id="game-screen">
+<!-- reload page warning modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="headingTextModal" tabindex="-1" role="dialog" aria-labelledby="headingTextModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="headingTextModalLabel">Are you sure you want to restart your treasure hunt?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>This will cause you to lose your current game progress</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Return to Game</button>
+        <button type="button" class="btn btn-danger" id="restartGame">Restart Game</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container text-center" id="game-screen">
       <div class="row">
         <div class="col" id="welcome-page-rules">
           <div class="container">
@@ -149,7 +172,7 @@
         </div>
       </div>
     </div>
-    <div class="container hide" id="correct-answers">
+    <div class="container hide text-center" id="correct-answers">
       <h3>Correct answers:</h3>
       <p id="correct"></p>
     </div>
@@ -170,5 +193,6 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSOm9ChOkYpWqfmV33bkmc79AoWUxMpWw&callback=initMap"
     ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

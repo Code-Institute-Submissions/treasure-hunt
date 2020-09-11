@@ -24,6 +24,18 @@ $(document).ready(function () {
   var captainName;
   var level = 0;
 
+   $("#heading-text--treasure").hover(function() {
+  $("#heading-text--treasure").css('cursor', 'pointer');
+   });
+
+  $("#heading-text--treasure").click(function() {
+      $("#headingTextModal").modal("show");
+  });
+
+  $("#restartGame").click(function() {
+      window.location.reload();
+  });
+
   $(startBtn).click(function () {
     captainName = document.getElementById("captain-name-typed").value;
     if (captainName.length === 0) {
