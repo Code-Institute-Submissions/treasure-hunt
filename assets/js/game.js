@@ -16,7 +16,7 @@ $(document).ready(function () {
   var shuffleMedQuestions = [];
   var currentMedQuestion;
   var thisMedQuestion;
-  
+
   var shuffleHardQuestions = [];
   var currentHardQuestion;
   var thisHardQuestion;
@@ -24,18 +24,16 @@ $(document).ready(function () {
   var captainName;
   var level = 0;
 
-  $("#heading-logo--gif").removeClass("hide");
-
-   $("#heading-logo--gif").hover(function() {
-  $("#heading-logo--gif").css('cursor', 'pointer');
-   });
-
-  $("#heading-logo--gif").click(function() {
-      $("#headingTextModal").modal("show");
+  $(".heading-logo").hover(function () {
+    $(".heading-logo").css("cursor", "pointer");
   });
 
-  $("#restartGame").click(function() {
-      window.location.reload();
+  $(".heading-logo").click(function () {
+    $("#headingTextModal").modal("show");
+  });
+
+  $("#restartGame").click(function () {
+    window.location.reload();
   });
 
   $(startBtn).click(function () {
@@ -45,8 +43,8 @@ $(document).ready(function () {
     } else {
       $(welcomePageRules).addClass("hide");
       $(welcomePageStory).removeClass("hide");
-        $("#heading-logo--gif").addClass("hide");
-          $("#heading-logo--png").removeClass("hide");
+      $("#heading-logo--gif").addClass("hide");
+      $("#heading-logo--png").removeClass("hide");
       document.getElementById("captainName").innerHTML = captainName;
       runWelcomePageStory();
     }
@@ -203,5 +201,5 @@ $(document).ready(function () {
 
   $("#restart").on("click", function () {
     window.location.reload();
-  });  
+  });
 });
