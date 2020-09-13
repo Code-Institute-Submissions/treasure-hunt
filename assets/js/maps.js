@@ -8,11 +8,18 @@ function initMap() {
   // -------- Map easy difficulty ---------
 
   var map = new google.maps.Map(document.getElementById("mapEasy"), {
-    zoom: 4,
+    zoom: 3.5,
     center: {
       lat: 23.464662,
       lng: -67.626422,
     },
+
+    styles: mapStyle,
+
+    mapTypeControlOptions: {
+      mapTypeIds: [],
+    },
+    streetViewControl: false,
   });
 
   var markerBer = new google.maps.Marker({
@@ -112,6 +119,12 @@ function initMap() {
       lat: 23.464662,
       lng: -67.626422,
     },
+    styles: mapStyle,
+
+    mapTypeControlOptions: {
+      mapTypeIds: [],
+    },
+    streetViewControl: false,
   });
 
   var markerBer = new google.maps.Marker({
@@ -210,6 +223,12 @@ function initMap() {
       lat: 23.464662,
       lng: -67.626422,
     },
+    styles: mapStyle,
+
+    mapTypeControlOptions: {
+      mapTypeIds: [],
+    },
+    streetViewControl: false,
   });
 
   var markerBer = new google.maps.Marker({
