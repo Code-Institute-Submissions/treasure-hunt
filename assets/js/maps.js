@@ -21,6 +21,7 @@ function initMap() {
     title: "Bermuda",
     label: {
       fontSize: "25pt",
+      fontFamily: "'IM Fell English SC', serif",
       text: "Bermuda",
     },
   });
@@ -31,6 +32,7 @@ function initMap() {
     title: "Jamaica",
     label: {
       fontSize: "25pt",
+      fontFamily: "'IM Fell English SC', serif",
       text: "Jamaica",
     },
   });
@@ -41,6 +43,7 @@ function initMap() {
     title: "Barbados",
     label: {
       fontSize: "25pt",
+      fontFamily: "'IM Fell English SC', serif",
       text: "Barbados",
     },
   });
@@ -51,6 +54,7 @@ function initMap() {
     title: "Antigua",
     label: {
       fontSize: "25pt",
+      fontFamily: "'IM Fell English SC', serif",
       text: "Antigua",
     },
   });
@@ -61,6 +65,7 @@ function initMap() {
     title: "Cuba",
     label: {
       fontSize: "25pt",
+      fontFamily: "'IM Fell English SC', serif",
       text: "Cuba",
     },
   });
@@ -115,6 +120,7 @@ function initMap() {
     title: "Bermuda",
     label: {
       fontSize: "25pt",
+      fontFamily: "'IM Fell English SC', serif",
       text: "Bermuda",
     },
   });
@@ -125,6 +131,7 @@ function initMap() {
     title: "Jamaica",
     label: {
       fontSize: "25pt",
+      fontFamily: "'IM Fell English SC', serif",
       text: "Jamaica",
     },
   });
@@ -135,6 +142,7 @@ function initMap() {
     title: "Barbados",
     label: {
       fontSize: "25pt",
+      fontFamily: "'IM Fell English SC', serif",
       text: "Barbados",
     },
   });
@@ -145,6 +153,7 @@ function initMap() {
     title: "Antigua",
     label: {
       fontSize: "25pt",
+      fontFamily: "'IM Fell English SC', serif",
       text: "Antigua",
     },
   });
@@ -155,6 +164,7 @@ function initMap() {
     title: "Cuba",
     label: {
       fontSize: "25pt",
+      fontFamily: "'IM Fell English SC', serif",
       text: "Cuba",
     },
   });
@@ -208,6 +218,7 @@ function initMap() {
     title: "Bermuda",
     label: {
       fontSize: "25pt",
+      fontFamily: "'IM Fell English SC', serif",
       text: "Bermuda",
     },
   });
@@ -218,6 +229,7 @@ function initMap() {
     title: "Jamaica",
     label: {
       fontSize: "25pt",
+      fontFamily: "'IM Fell English SC', serif",
       text: "Jamaica",
     },
   });
@@ -228,6 +240,7 @@ function initMap() {
     title: "Barbados",
     label: {
       fontSize: "25pt",
+      fontFamily: "'IM Fell English SC', serif",
       text: "Barbados",
     },
   });
@@ -238,6 +251,7 @@ function initMap() {
     title: "Antigua",
     label: {
       fontSize: "25pt",
+      fontFamily: "'IM Fell English SC', serif",
       text: "Antigua",
     },
   });
@@ -248,6 +262,7 @@ function initMap() {
     title: "Cuba",
     label: {
       fontSize: "25pt",
+      fontFamily: "'IM Fell English SC', serif",
       text: "Cuba",
     },
   });

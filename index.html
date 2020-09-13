@@ -58,11 +58,13 @@
   </div>
 </div>
 
+<!-- Game screen -->
+
     <div class="container text-center" id="game-screen">
       <div class="row">
         <div class="col" id="welcome-page-rules">
           <div class="container">
-            <h2>Welcome to your Treasure Hunt journey!</h2>
+            <h1 id="welcome-text">Welcome to your Treasure Hunt journey!</h1>
             <p class="info-text">
               Treasure Hunt will test your knowledge of the high seas and give
               you clues to help you identify where the treasure is hidden. You
@@ -74,14 +76,14 @@
             </p>
             <form>
               <div class="form-group">
-                <h2>
+                <h2 id="enter-name">
                   Enter your name below, Captain, then click below to set sail!
                 </h2>
                 <input type="text" id="captain-name-typed" />
                 <p id="missingName"></p>
               </div>
               <div class="form-group">
-                <button id="start-btn" type="button">
+                <button class="btn game-btn" id="start-btn" type="button">
                   Start your journey!
                 </button>
               </div>
@@ -101,9 +103,9 @@
               treasure that you've been searching for years to get your hands
               (and hooks) on. Good luck!
             </p>
-            <button id="start-game-easy" class="start-game-btn">Easy</button>
-            <button id="start-game-med" class="start-game-btn">Medium</button>
-            <button id="start-game-hard" class="start-game-btn">Hard</button>
+            <button id="start-game-easy" class="btn game-btn start-game-btn">Easy</button>
+            <button id="start-game-med" class="btn game-btn start-game-btn">Medium</button>
+            <button id="start-game-hard" class="btn game-btn start-game-btn">Hard</button>
           </div>
         </div>
 
@@ -111,17 +113,17 @@
           <div class="container">
             <h3 id="easy-question"></h3>
             <button
-              class="easy-answer-button"
+              class="btn game-btn easy-answer-button"
               id="easyA"
               value="easyA"
             ></button>
             <button
-              class="easy-answer-button"
+              class="btn game-btn easy-answer-button"
               id="easyB"
               value="easyB"
             ></button>
             <button
-              class="easy-answer-button"
+              class="btn game-btn easy-answer-button"
               id="easyC"
               value="easyC"
             ></button>
@@ -131,18 +133,18 @@
         <div class="col hide" id="question-page-med">
           <div class="container">
             <h3 id="med-question"></h3>
-            <button class="med-answer-button" id="medA" value="medA"></button>
-            <button class="med-answer-button" id="medB" value="medB"></button>
-            <button class="med-answer-button" id="medC" value="medC"></button>
+            <button class="btn game-btn med-answer-button" id="medA" value="medA"></button>
+            <button class="btn game-btn med-answer-button" id="medB" value="medB"></button>
+            <button class="btn game-btn med-answer-button" id="medC" value="medC"></button>
           </div>
         </div>
 
         <div class="col hide" id="question-page-hard">
           <div class="container">
             <h3 id="hard-question"></h3>
-            <button class="hard-answer-button" id="hardA"></button>
-            <button class="hard-answer-button" id="hardB"></button>
-            <button class="hard-answer-button" id="hardC"></button>
+            <button class="btn game-btn hard-answer-button" id="hardA"></button>
+            <button class="btn game-btn hard-answer-button" id="hardB"></button>
+            <button class="btn game-btn hard-answer-button" id="hardC"></button>
           </div>
         </div>
 
@@ -174,13 +176,13 @@
               </h2>
               <img src="assets/img/pirate-row-boat.png" alt="pirate row boat" />
             </div>
-            <button id="restart">Play again</button>
+            <button class="btn game-btn" id="restart">Play again</button>
           </div>
         </div>
       </div>
     </div>
     <div class="container hide text-center" id="correct-answers">
-      <h3>Correct answers:</h3>
+      <p>Correct answers:</p>
       <p id="correct"></p>
     </div>
 
