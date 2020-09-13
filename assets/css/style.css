@@ -23,36 +23,59 @@ body {
 #med-question,
 #hard-question,
 .modal-title {
-    font-family: "IM Fell English SC", serif;
+  font-family: "IM Fell English SC", serif;
 }
 
 #easy-question,
 #med-question,
 #hard-question {
-    font-style: italic;
+  font-style: italic;
 }
 
 .info-text,
 #missingName,
 .modal-body {
-    font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 #captain-name-typed,
 #correct-answers {
-    font-family: "Tangerine", cursive;
+  font-family: "Tangerine", cursive;
 }
 
 #captain-name-typed {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 #correct-answers {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .btn.game-btn {
-    font-size: 20px;
+  font-size: 20px;
+}
+
+/* Volume & help button */
+
+i.fas.fa-volume,
+i.fas.fa-volume-mute {
+    top: 5px;
+}
+
+i.fas.fa-volume,
+i.fas.fa-volume-mute,
+i.far.fa-question-circle  {
+  position: absolute;
+  right: 2px;
+  color: white;
+  font-size: 25px;
+  background: rgba(218, 218, 218, 0.9);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+i.far.fa-question-circle {
+  top: 50px;
 }
 
 #game-screen {
