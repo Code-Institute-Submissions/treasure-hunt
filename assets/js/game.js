@@ -38,13 +38,16 @@ $(document).ready(function () {
     $('[data-toggle="tooltipMute"]').tooltip("show")
   });
 
-  $(".fa-volume").css("cursor", "pointer");
+      $(".fa-question-circle").mouseenter(function() {
+    $('[data-toggle="helpBtn"]').tooltip("show")
+  });
+
   $(".fa-volume").click(function () {
     $("#volume-container").addClass("hide");
     $("#mute-container").removeClass("hide");
     bgAudio.muted = true;
   });
- $(".fa-volume-mute").css("cursor", "pointer");
+
     $(".fa-volume-mute").click(function () {
     $("#mute-container").addClass("hide");
     $("#volume-container").removeClass("hide");
