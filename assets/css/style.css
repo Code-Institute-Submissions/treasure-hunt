@@ -59,7 +59,7 @@ body {
 
 i.fas.fa-volume,
 i.fas.fa-volume-mute {
-    top: 5px;
+    top: 50px;
 }
 
 i.fas.fa-volume,
@@ -72,10 +72,15 @@ i.far.fa-question-circle  {
   background: rgba(218, 218, 218, 0.9);
     border-radius: 50%;
     padding: 8px;
+    z-index: 99;
 }
 
 i.far.fa-question-circle {
-  top: 50px;
+  top: 5px;
+}
+
+i {
+    cursor: pointer;
 }
 
 #game-screen {

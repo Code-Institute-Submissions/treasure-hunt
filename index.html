@@ -20,56 +20,105 @@
     <title>Treasure Hunt</title>
   </head>
   <body>
-  <div class="heading-container">
-  <div class="volume-container">
-  <i class="fas fa-volume hide"></i>
-  </div>
-  <div class="mute-container hide">
-  <i class="fas fa-volume-mute"></i>
-  </div>
-  <div class="help-container">
-  <i class="far fa-question-circle"></i>
-  </div>
-    <div class="container" id="heading-logo--gif">
-      <div class="row">
-        <div class="col-12">
-         <img src="assets/img/treasure-hunt.gif" alt="treasure hunt gif logo" id="logo-img--gif" class="heading-logo">
+    <div class="heading-container">
+      <div class="hide" id="volume-container">
+        <i
+          class="fas fa-volume"
+          data-toggle="tooltipVol"
+          data-placement="left"
+          title="Mute"
+        ></i>
+        <audio
+          loop
+          preload="auto"
+          type="audio/mp3"
+          id="playAudioBackground"
+          src="assets/sound/the-buccaneers-haul.mp3"
+        ></audio>
+      </div>
+      <div class="hide" id="mute-container">
+        <i
+          class="fas fa-volume-mute"
+          data-toggle="tooltipMute"
+          data-placement="left"
+          title="Unmute"
+        ></i>
+      </div>
+      <div class="help-container">
+        <i class="far fa-question-circle"></i>
+      </div>
+      <div class="container" id="heading-logo--gif">
+        <div class="row">
+          <div class="col-12">
+            <img
+              src="assets/img/treasure-hunt.gif"
+              alt="treasure hunt gif logo"
+              id="logo-img--gif"
+              class="heading-logo"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container hide" id="heading-logo--png">
+        <div class="row">
+          <div class="col-12">
+            <img
+              src="assets/img/treasure-hunt.png"
+              alt="treasure hunt image logo"
+              id="logo-img--png"
+              class="heading-logo"
+            />
+          </div>
         </div>
       </div>
     </div>
-    <div class="container hide" id="heading-logo--png">
-      <div class="row">
-        <div class="col-12">
-         <img src="assets/img/treasure-hunt.png" alt="treasure hunt image logo" id="logo-img--png" class="heading-logo">
+
+    <!-- reload page warning modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="headingTextModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="headingTextModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="headingTextModalLabel">
+              Are you sure you want to restart your treasure hunt?
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>This will cause you to lose your current game progress</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Return to Game
+            </button>
+            <button type="button" class="btn btn-danger" id="restartGame">
+              Restart Game
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-<!-- reload page warning modal -->
-
-<!-- Modal -->
-<div class="modal fade" id="headingTextModal" tabindex="-1" role="dialog" aria-labelledby="headingTextModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="headingTextModalLabel">Are you sure you want to restart your treasure hunt?</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>This will cause you to lose your current game progress</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Return to Game</button>
-        <button type="button" class="btn btn-danger" id="restartGame">Restart Game</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Game screen -->
+    <!-- Game screen -->
 
     <div class="container text-center" id="game-screen">
       <div class="row">
@@ -114,9 +163,15 @@
               treasure that you've been searching for years to get your hands
               (and hooks) on. Good luck!
             </p>
-            <button id="start-game-easy" class="btn game-btn start-game-btn">Easy</button>
-            <button id="start-game-med" class="btn game-btn start-game-btn">Medium</button>
-            <button id="start-game-hard" class="btn game-btn start-game-btn">Hard</button>
+            <button id="start-game-easy" class="btn game-btn start-game-btn">
+              Easy
+            </button>
+            <button id="start-game-med" class="btn game-btn start-game-btn">
+              Medium
+            </button>
+            <button id="start-game-hard" class="btn game-btn start-game-btn">
+              Hard
+            </button>
           </div>
         </div>
 
@@ -144,9 +199,21 @@
         <div class="col hide" id="question-page-med">
           <div class="container">
             <h3 id="med-question"></h3>
-            <button class="btn game-btn med-answer-button" id="medA" value="medA"></button>
-            <button class="btn game-btn med-answer-button" id="medB" value="medB"></button>
-            <button class="btn game-btn med-answer-button" id="medC" value="medC"></button>
+            <button
+              class="btn game-btn med-answer-button"
+              id="medA"
+              value="medA"
+            ></button>
+            <button
+              class="btn game-btn med-answer-button"
+              id="medB"
+              value="medB"
+            ></button>
+            <button
+              class="btn game-btn med-answer-button"
+              id="medC"
+              value="medC"
+            ></button>
           </div>
         </div>
 

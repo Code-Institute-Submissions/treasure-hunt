@@ -24,6 +24,33 @@ $(document).ready(function () {
   var captainName;
   var level = 0;
 
+//   -------- Background Audio --------
+
+  var bgAudio = document.getElementById("playAudioBackground");
+  bgAudio.volume = 0.3;
+
+
+  $(".fa-volume").mouseenter(function() {
+    $('[data-toggle="tooltipVol"]').tooltip("show")
+  });
+
+    $(".fa-volume-mute").mouseenter(function() {
+    $('[data-toggle="tooltipMute"]').tooltip("show")
+  });
+
+  $(".fa-volume").css("cursor", "pointer");
+  $(".fa-volume").click(function () {
+    $("#volume-container").addClass("hide");
+    $("#mute-container").removeClass("hide");
+    bgAudio.muted = true;
+  });
+ $(".fa-volume-mute").css("cursor", "pointer");
+    $(".fa-volume-mute").click(function () {
+    $("#mute-container").addClass("hide");
+    $("#volume-container").removeClass("hide");
+    bgAudio.muted = false;
+  });
+
   $(".heading-logo").hover(function () {
     $(".heading-logo").css("cursor", "pointer");
   });
@@ -45,6 +72,9 @@ $(document).ready(function () {
       $(welcomePageStory).removeClass("hide");
       $("#heading-logo--gif").addClass("hide");
       $("#heading-logo--png").removeClass("hide");
+      $("#volume-container").removeClass("hide");
+      bgAudio.play();
+      bgAudio.muted = false;
       document.getElementById("captainName").innerHTML = captainName;
       runWelcomePageStory();
     }
