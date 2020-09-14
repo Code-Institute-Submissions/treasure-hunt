@@ -24,22 +24,25 @@ $(document).ready(function () {
   var captainName;
   var level = 0;
 
-//   -------- Background Audio --------
+  var aye = document.getElementById("playAye");
+  var blimey = document.getElementById("playBlimey");
+  var allAudio = document.querySelectorAll("audio");
+
+  //   -------- Background Audio --------
 
   var bgAudio = document.getElementById("playAudioBackground");
   bgAudio.volume = 0.3;
 
-
-  $(".fa-volume").mouseenter(function() {
-    $('[data-toggle="tooltipVol"]').tooltip("show")
+  $(".fa-volume").mouseenter(function () {
+    $('[data-toggle="tooltipVol"]').tooltip("show");
   });
 
-    $(".fa-volume-mute").mouseenter(function() {
-    $('[data-toggle="tooltipMute"]').tooltip("show")
+  $(".fa-volume-mute").mouseenter(function () {
+    $('[data-toggle="tooltipMute"]').tooltip("show");
   });
 
-      $(".fa-question-circle").mouseenter(function() {
-    $('[data-toggle="helpBtn"]').tooltip("show")
+  $(".fa-question-circle").mouseenter(function () {
+    $('[data-toggle="helpBtn"]').tooltip("show");
   });
 
   $(".fa-volume").click(function () {
@@ -48,7 +51,7 @@ $(document).ready(function () {
     bgAudio.muted = true;
   });
 
-    $(".fa-volume-mute").click(function () {
+  $(".fa-volume-mute").click(function () {
     $("#mute-container").addClass("hide");
     $("#volume-container").removeClass("hide");
     bgAudio.muted = false;
@@ -136,8 +139,14 @@ $(document).ready(function () {
     const answerText = this.innerHTML;
     if (chosenAnswer == thisEasyQuestion.cor) {
       $("#correct").append(`${answerText}<br>`);
+      if (bgAudio.muted === false) {
+        aye.play();
+      }
     } else {
       console.log("wrong");
+      if (bgAudio.muted === false) {
+        blimey.play();
+      }
     }
     if (level === 4) {
       $(easyQuestionPage).addClass("hide");
@@ -176,8 +185,14 @@ $(document).ready(function () {
     const answerText = this.innerHTML;
     if (chosenAnswer == thisMedQuestion.cor) {
       $("#correct").append(`${answerText}<br>`);
+      if (bgAudio.muted === false) {
+        aye.play();
+      }
     } else {
       console.log("wrong");
+      if (bgAudio.muted === false) {
+        blimey.play();
+      }
     }
     if (level === 4) {
       $(medQuestionPage).addClass("hide");
@@ -216,8 +231,14 @@ $(document).ready(function () {
     const answerText = this.innerHTML;
     if (chosenAnswer == thisHardQuestion.cor) {
       $("#correct").append(`${answerText}<br>`);
+      if (bgAudio.muted === false) {
+        aye.play();
+      }
     } else {
       console.log("wrong");
+      if (bgAudio.muted === false) {
+        blimey.play();
+      }
     }
     if (level === 4) {
       $(hardQuestionPage).addClass("hide");
@@ -227,6 +248,26 @@ $(document).ready(function () {
     } else {
       level = level + 1;
       nextHardQuestion();
+    }
+  });
+
+  $("#winning-btn").click(function () {
+    $("#final-page").removeClass("hide");
+    $("#yesCaptain").removeClass("hide");
+    $("#journey-page-win").addClass("hide");
+    $("#winning-btn").addClass("hide");
+    if (bgAudio.muted === false) {
+      cheer.play();
+    }
+  });
+
+  $("#losing-btn").click(function () {
+    $("#final-page").removeClass("hide");
+    $("#noCaptain").removeClass("hide");
+    $("#journey-page-lose").addClass("hide");
+    $("#losing-btn").addClass("hide");
+    if (bgAudio.muted === false) {
+      shiver.play();
     }
   });
 

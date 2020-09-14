@@ -30,6 +30,7 @@
         ></i>
         <audio
           loop
+          class="audio"
           preload="auto"
           type="audio/mp3"
           id="playAudioBackground"
@@ -45,10 +46,12 @@
         ></i>
       </div>
       <div class="help-container">
-        <i class="far fa-question-circle"
-        data-toggle="helpBtn"
+        <i
+          class="far fa-question-circle"
+          data-toggle="helpBtn"
           data-placement="left"
-          title="Pass through the questions to pick up clues. Once you've answered all questions, use these clues to find the place that links them to a place on the map where the treasure is buried."></i>
+          title="Pass through the questions to pick up clues. Once you've answered all questions, use these clues to find the place that links them to a place on the map where the treasure is buried."
+        ></i>
       </div>
       <div class="container" id="heading-logo--gif">
         <div class="row">
@@ -229,6 +232,21 @@
           </div>
         </div>
 
+        <audio
+          class="audio"
+          preload="auto"
+          type="audio/mp3"
+          id="playAye"
+          src="assets/sound/aye.mp3"
+        ></audio>
+        <audio
+          class="audio"
+          preload="auto"
+          type="audio/mp3"
+          id="playBlimey"
+          src="assets/sound/blimey.mp3"
+        ></audio>
+
         <div class="col hide" id="map-page">
           <div class="container">
             <h2 class="captain-text">Great work Captain!</h2>
@@ -243,14 +261,44 @@
             <div class="container-fluid hide" id="mapHard"></div>
           </div>
         </div>
+        <div class="col hide" id="journey-page-win">
+          <div class="container">
+            <p class="captain-text">
+              You set sail for your chosen island, but did you choose wisely?
+            </p>
+            <button class="btn hide" id="winning-btn">Reveal your fate</button>
+          </div>
+        </div>
+        <div class="col hide" id="journey-page-lose">
+          <div class="container">
+            <p class="captain-text">
+              You set sail for your chosen island, but did you choose wisely?
+            </p>
+            <button class="btn hide" id="losing-btn">Reveal your fate</button>
+          </div>
+        </div>
         <div class="col hide" id="final-page">
           <div class="container">
             <div class="hide" id="yesCaptain">
+              <audio
+                class="audio"
+                preload="auto"
+                type="audio/mp3"
+                id="playCheer"
+                src="assets/sound/cheer.mp3"
+              ></audio>
               <h2 class="captain-text">You did it Captain!</h2>
               <img src="assets/img/treasure.png" alt="pirate treasure chest" />
             </div>
 
             <div class="hide" id="noCaptain">
+              <audio
+                class="audio"
+                preload="auto"
+                type="audio/mp3"
+                id="playShiver"
+                src="assets/sound/shiver.mp3"
+              ></audio>
               <h2 class="captain-text">
                 Your crew are angry. It's the plank for you Captain captainName!
                 If you're lucky you can row back to shore.

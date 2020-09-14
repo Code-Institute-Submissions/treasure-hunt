@@ -3,6 +3,8 @@ var jamaicaLatLng = { lat: 18.1198291, lng: -77.8365849 };
 var barbadosLatLng = { lat: 13.1884729, lng: -59.6753414 };
 var antiguaLatLng = { lat: 17.0858213, lng: -61.8596279 };
 var cubaLatLng = { lat: 21.4653347, lng: -84.0583324 };
+var cheer = document.getElementById("playCheer");
+var shiver = document.getElementById("playShiver");
 
 function initMap() {
   // -------- Map easy difficulty ---------
@@ -80,35 +82,35 @@ function initMap() {
   markerBer.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
-    $("#final-page").removeClass("hide");
-    $("#noCaptain").removeClass("hide");
+    $("#journey-page-lose").removeClass("hide");
+    $("#losing-btn").removeClass("hide");
   });
 
   markerJam.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
-    $("#final-page").removeClass("hide");
-    $("#yesCaptain").removeClass("hide");
+    $("#journey-page-win").removeClass("hide");
+    $("#winning-btn").removeClass("hide");
   });
   markerBar.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
-    $("#final-page").removeClass("hide");
-    $("#noCaptain").removeClass("hide");
+    $("#journey-page-lose").removeClass("hide");
+    $("#losing-btn").removeClass("hide");
   });
 
   markerAnt.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
-    $("#final-page").removeClass("hide");
-    $("#noCaptain").removeClass("hide");
+    $("#journey-page-lose").removeClass("hide");
+    $("#losing-btn").removeClass("hide");
   });
 
   markerCub.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
-    $("#final-page").removeClass("hide");
-    $("#noCaptain").removeClass("hide");
+    $("#journey-page-lose").removeClass("hide");
+    $("#losing-btn").removeClass("hide");
   });
 
   // -------- Map medium difficulty ---------
@@ -184,35 +186,35 @@ function initMap() {
   markerBer.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
-    $("#final-page").removeClass("hide");
-    $("#noCaptain").removeClass("hide");
+    $("#journey-page-lose").removeClass("hide");
+    $("#losing-btn").removeClass("hide");
   });
 
   markerJam.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
-    $("#final-page").removeClass("hide");
-    $("#noCaptain").removeClass("hide");
+    $("#journey-page-lose").removeClass("hide");
+    $("#losing-btn").removeClass("hide");
   });
   markerBar.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
-    $("#final-page").removeClass("hide");
-    $("#yesCaptain").removeClass("hide");
+    $("#journey-page-win").removeClass("hide");
+    $("#winning-btn").removeClass("hide");
   });
 
   markerAnt.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
-    $("#final-page").removeClass("hide");
-    $("#noCaptain").removeClass("hide");
+    $("#journey-page-lose").removeClass("hide");
+    $("#losing-btn").removeClass("hide");
   });
 
   markerCub.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
-    $("#final-page").removeClass("hide");
-    $("#noCaptain").removeClass("hide");
+    $("#journey-page-lose").removeClass("hide");
+    $("#losing-btn").removeClass("hide");
   });
 
   // -------- Map hard difficulty ---------
@@ -288,34 +290,34 @@ function initMap() {
   markerBer.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
-    $("#final-page").removeClass("hide");
-    $("#yesCaptain").removeClass("hide");
+    $("#journey-page-win").removeClass("hide");
+    $("#winning-btn").removeClass("hide");
   });
 
   markerJam.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
-    $("#final-page").removeClass("hide");
-    $("#noCaptain").removeClass("hide");
+    $("#journey-page-lose").removeClass("hide");
+    $("#losing-btn").removeClass("hide");
   });
   markerBar.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
-    $("#final-page").removeClass("hide");
-    $("#noCaptain").removeClass("hide");
+    $("#journey-page-lose").removeClass("hide");
+    $("#losing-btn").removeClass("hide");
   });
 
   markerAnt.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
-    $("#final-page").removeClass("hide");
-    $("#noCaptain").removeClass("hide");
+    $("#journey-page-lose").removeClass("hide");
+    $("#losing-btn").removeClass("hide");
   });
 
   markerCub.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
-    $("#final-page").removeClass("hide");
-    $("#noCaptain").removeClass("hide");
+    $("#journey-page-lose").removeClass("hide");
+    $("#losing-btn").removeClass("hide");
   });
 }
