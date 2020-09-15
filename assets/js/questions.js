@@ -90,7 +90,7 @@ const questionMed = [
   {
     question: "Which aircraft reached speeds on 2,179 km/h?",
     medA: "Airbus A320",
-    medB: "Concord",
+    medB: "Concorde",
     medC: "Airbus Beluga",
     correct: "medB",
   },
@@ -144,10 +144,10 @@ const questionMed = [
     correct: "medB",
   },
   {
-    question: "Which book contains the Old and New testaments?",
-    medA: "The Bible",
-    medB: "Harry Potter and the Philosopher's Stone",
-    medC: "Bridge Jones Diary",
+    question: "Which of these is a three pronged spear?",
+    medA: "Trident",
+    medB: "Javelin",
+    medC: "Glaive",
     correct: "medA",
   },
 ];
