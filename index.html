@@ -47,7 +47,7 @@
       </div>
       <div class="help-container">
         <i
-          class="far fa-question-circle"
+          class="far fa-question-circle help-tooltip"
           data-toggle="helpBtn"
           data-placement="left"
           title="Pass through the questions to pick up clues. Once you've answered all questions, use these clues to find the place that links them to a place on the map where the treasure is buried."
@@ -248,9 +248,9 @@
         ></audio>
 
         <div class="col hide" id="map-page">
-          <div class="container">
+          <div class="container map-page-container">
             <h2 class="captain-text">Great work Captain!</h2>
-            <p class="info-text">
+            <p class="info-text info-text--map">
               Hopefully you've worked out some clues. These clues should point
               you towards the treasure's location. Locate it on the map below
               and it'll all be yours. Be careful though, if you choose the wrong
@@ -266,8 +266,8 @@
             <h2 class="captain-text">
               You set sail for your chosen island, but did you choose wisely?
             </h2>
-            <img src="assets/img/ship.png" alt="pirate treasure chest" />
-            <button class="btn hide" id="winning-btn">Reveal your fate</button>
+            <img src="assets/img/ship.png" alt="pirate ship" class="end-img"/>
+            <button class="btn game-btn hide" id="winning-btn">Reveal your fate</button>
           </div>
         </div>
         <div class="col hide" id="journey-page-lose">
@@ -275,8 +275,8 @@
             <h2 class="captain-text">
               You set sail for your chosen island, but did you choose wisely?
             </h2>
-            <img src="assets/img/ship.png" alt="pirate treasure chest" />
-            <button class="btn hide" id="losing-btn">Reveal your fate</button>
+            <img src="assets/img/ship.png" alt="pirate ship" class="end-img"/>
+            <button class="btn game-btn hide" id="losing-btn">Reveal your fate</button>
           </div>
         </div>
         <div class="col hide" id="final-page">
@@ -290,7 +290,7 @@
                 src="assets/sound/cheer.mp3"
               ></audio>
               <h2 class="captain-text">You did it Captain!</h2>
-              <img src="assets/img/treasure.png" alt="pirate treasure chest" />
+              <img src="assets/img/treasure.png" alt="pirate treasure chest" class="end-img"/>
             </div>
 
             <div class="hide" id="noCaptain">
@@ -305,7 +305,7 @@
                 Your crew are angry. It's the plank for you Captain captainName!
                 If you're lucky you can row back to shore.
               </h2>
-              <img src="assets/img/pirate-row-boat.png" alt="pirate row boat" />
+              <img src="assets/img/pirate-row-boat.png" alt="pirate row boat" class="end-img"/>
             </div>
             <button class="btn game-btn" id="restart">Play again</button>
           </div>

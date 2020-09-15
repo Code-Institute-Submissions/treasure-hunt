@@ -11,6 +11,7 @@ body {
 #game-screen,
 #correct-answers {
   background-color: rgba(255, 255, 255, 0.95);
+  background-image: url("../img/old-paper.png");
 }
 
 /* Fonts */
@@ -83,12 +84,83 @@ i {
     cursor: pointer;
 }
 
+/* Game screen */
+
 #game-screen {
   border-radius: 50px;
   align-items: center;
   display: flex;
   justify-content: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
 }
+
+/* Correct answers */
+
+#correct-answers {
+    border-radius: 50px;
+}
+
+/* Captain name input */
+
+#captain-name-typed {
+    background-color: rgba(250, 235, 215, 0.5);
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: black;
+}
+
+input#captain-name-typed:focus {
+    outline: none;
+        border-width: 2px;
+    border-color: black;
+}
+
+/* modal content */
+
+div.modal-content {
+    background-color: rgb(217, 217, 217);
+}
+
+/* Tooltip */
+
+.tooltip > .tooltip-inner {
+    background-color: rgb(19, 40, 103);
+}
+
+/* Buttons */
+
+.btn.game-btn {
+    border-width: 1px;
+    border-color: black;
+    width: 239px;
+}
+
+.btn.game-btn:focus {
+        outline: none;
+        box-shadow: none;
+}
+
+#start-btn.btn.game-btn:focus {
+        border-width: 2px;
+    border-color: black;
+}
+
+.start-game-btn {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 991.98px) {
+.btn.game-btn {
+    display: block;
+    justify-content: center;
+    margin: 5px auto;
+}
+}
+
+/* Map */
 
 #mapEasy,
 #mapMed,
@@ -98,13 +170,22 @@ i {
   border-radius: 10px;
 }
 
-.hide {
-  display: none;
+@media (max-width: 991.98px) {
+    #map-page.col {
+                padding-left: 0;
+        padding-right: 0;
+    }
+    .container.map-page-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .info-text--map {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
-#heading-text--treasure {
-  margin-top: 8px;
-}
+/* Images */
 
 #logo-img--gif,
 #logo-img--png {
@@ -118,8 +199,21 @@ i {
 
 #logo-img--gif {
   height: 32vh;
+      margin-top: 2.5vh;
 }
 #logo-img--png {
   height: 20vh;
   background: rgb(217, 217, 217);
+    margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.end-img {
+    height: 30vh;
+    margin-bottom: 2.5vh;
+}
+/* Hide */
+
+.hide {
+  display: none;
 }
