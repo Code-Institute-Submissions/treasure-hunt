@@ -110,7 +110,6 @@ i {
 #logo-img--png {
   margin-left: auto;
   margin-right: auto;
-  height: 40vh;
   display: block;
   margin-top: 1vh;
   margin-bottom: 1vh;
@@ -118,7 +117,7 @@ i {
 }
 
 #logo-img--gif {
-  height: 40vh;
+  height: 32vh;
 }
 #logo-img--png {
   height: 20vh;
