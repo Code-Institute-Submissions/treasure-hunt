@@ -152,6 +152,12 @@ div.modal-content {
     margin-bottom: 5px;
 }
 
+#losing-btn.btn.game-btn,
+#winning-btn.btn.game-btn {
+    display: block;
+    margin: 0 auto;
+}
+
 @media (max-width: 991.98px) {
 .btn.game-btn {
     display: block;
