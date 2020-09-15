@@ -160,6 +160,16 @@ div.modal-content {
 }
 }
 
+.btn.game-btn.correctAnswer {
+   background-image: linear-gradient(to bottom right,rgb(36, 237, 29), rgb(0, 100, 0));
+        box-shadow: 0 0 0 2px rgba(36, 237, 29,.5);
+}
+
+.btn.game-btn.wrongAnswer {
+    background-image: linear-gradient(to bottom right, rgb(237, 29, 36), rgb(128,0,0));
+    box-shadow: 0 0 0 2px rgba(237, 29, 36,.5);
+}
+
 /* Map */
 
 #mapEasy,

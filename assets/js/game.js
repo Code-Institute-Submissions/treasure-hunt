@@ -139,23 +139,32 @@ $(document).ready(function () {
     const answerText = this.innerHTML;
     if (chosenAnswer == thisEasyQuestion.cor) {
       $("#correct").append(`${answerText}<br>`);
+      $(this).addClass("correctAnswer");
       if (bgAudio.muted === false) {
         aye.play();
       }
     } else {
-      console.log("wrong");
+      $(this).addClass("wrongAnswer");
       if (bgAudio.muted === false) {
         blimey.play();
       }
     }
     if (level === 4) {
-      $(easyQuestionPage).addClass("hide");
-      $("#map-page").removeClass("hide");
-      $("#mapEasy").removeClass("hide");
-      initMap();
+      setTimeout(function () {
+        $(easyQuestionPage).addClass("hide");
+        $("#map-page").removeClass("hide");
+        $("#mapEasy").removeClass("hide");
+        $(".easy-answer-button").removeClass("wrongAnswer");
+        $(".easy-answer-button").removeClass("correctAnswer");
+        initMap();
+      }, 500);
     } else {
-      level = level + 1;
-      nextEasyQuestion();
+      setTimeout(function () {
+        level = level + 1;
+        $(".easy-answer-button").removeClass("wrongAnswer");
+        $(".easy-answer-button").removeClass("correctAnswer");
+        nextEasyQuestion();
+      }, 500);
     }
   });
 
@@ -185,23 +194,32 @@ $(document).ready(function () {
     const answerText = this.innerHTML;
     if (chosenAnswer == thisMedQuestion.cor) {
       $("#correct").append(`${answerText}<br>`);
+      $(this).addClass("correctAnswer");
       if (bgAudio.muted === false) {
         aye.play();
       }
     } else {
-      console.log("wrong");
+      $(this).addClass("wrongAnswer");
       if (bgAudio.muted === false) {
         blimey.play();
       }
     }
     if (level === 4) {
-      $(medQuestionPage).addClass("hide");
-      $("#map-page").removeClass("hide");
-      $("#mapMed").removeClass("hide");
-      initMap();
+      setTimeout(function () {
+        $(medQuestionPage).addClass("hide");
+        $("#map-page").removeClass("hide");
+        $("#mapMed").removeClass("hide");
+        $(".med-answer-button").removeClass("wrongAnswer");
+        $(".med-answer-button").removeClass("correctAnswer");
+        initMap();
+      }, 500);
     } else {
-      level = level + 1;
-      nextMedQuestion();
+      setTimeout(function () {
+        level = level + 1;
+        $(".med-answer-button").removeClass("wrongAnswer");
+        $(".med-answer-button").removeClass("correctAnswer");
+        nextMedQuestion();
+      }, 500);
     }
   });
 
@@ -231,25 +249,36 @@ $(document).ready(function () {
     const answerText = this.innerHTML;
     if (chosenAnswer == thisHardQuestion.cor) {
       $("#correct").append(`${answerText}<br>`);
+      $(this).addClass("correctAnswer");
       if (bgAudio.muted === false) {
         aye.play();
       }
     } else {
-      console.log("wrong");
+      $(this).addClass("wrongAnswer");
       if (bgAudio.muted === false) {
         blimey.play();
       }
     }
     if (level === 4) {
-      $(hardQuestionPage).addClass("hide");
-      $("#map-page").removeClass("hide");
-      $("#mapHard").removeClass("hide");
-      initMap();
+      setTimeout(function () {
+        $(hardQuestionPage).addClass("hide");
+        $("#map-page").removeClass("hide");
+        $("#mapHard").removeClass("hide");
+        $(".hard-answer-button").removeClass("wrongAnswer");
+        $(".hard-answer-button").removeClass("correctAnswer");
+        initMap();
+      }, 500);
     } else {
-      level = level + 1;
-      nextHardQuestion();
+      setTimeout(function () {
+        level = level + 1;
+        $(".hard-answer-button").removeClass("wrongAnswer");
+        $(".hard-answer-button").removeClass("correctAnswer");
+        nextHardQuestion();
+      }, 500);
     }
   });
+
+//   ------ To final page --------
 
   $("#winning-btn").click(function () {
     $("#final-page").removeClass("hide");
