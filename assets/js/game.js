@@ -26,7 +26,6 @@ $(document).ready(function () {
 
   var aye = document.getElementById("playAye");
   var blimey = document.getElementById("playBlimey");
-  var allAudio = document.querySelectorAll("audio");
 
   //   -------- Background Audio --------
 
@@ -278,7 +277,7 @@ $(document).ready(function () {
     }
   });
 
-//   ------ To final page --------
+  //   ------ To final page --------
 
   $("#winning-btn").click(function () {
     $("#final-page").removeClass("hide");
