@@ -11,7 +11,7 @@ const questionEasy = [
   },
   {
     question:
-      "Which singer sung ‘No women, no cry’ which was released in 1979?",
+      "Which singer sung ‘No woman, no cry’ which was released in 1979?",
     easyA: "Kurt Cobain",
     easyB: "Bob Marley",
     easyC: "Michael Jackson",
@@ -45,6 +45,34 @@ const questionEasy = [
     easyA: "Rock",
     easyB: "Reggae",
     easyC: "Pop",
+    correct: "easyB",
+  },
+    {
+    question: "Which entrepreneur won investment on Dragon's Den with his famous Caribbean sauce?",
+    easyA: "Levi Roots",
+    easyB: "Shaun Pulfrey ",
+    easyC: "Oscar Bezzant",
+    correct: "easyA",
+  },
+    {
+    question: "Which athlete won the women's 100m at London 2012?",
+    easyA: "Carmelita Jeter",
+    easyB: "Allyson Felix",
+    easyC: "Shelly-Ann Fraser-Pryce",
+    correct: "easyB",
+  },
+    {
+    question: "Which British university has alumni including Lawrence Dallaglio & Gail Emms?",
+    easyA: "Loughborough",
+    easyB: "Bristol",
+    easyC: "Kingston",
+    correct: "easyC",
+  },
+      {
+    question: "What beverage is shown on the Dunkin' Donuts logo?",
+    easyA: "Wine",
+    easyB: "Beer",
+    easyC: "Coffee",
     correct: "easyC",
   },
 ];
