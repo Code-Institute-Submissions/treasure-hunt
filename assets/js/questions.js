@@ -59,7 +59,7 @@ const questionEasy = [
     easyA: "Carmelita Jeter",
     easyB: "Allyson Felix",
     easyC: "Shelly-Ann Fraser-Pryce",
-    correct: "easyB",
+    correct: "easyC",
   },
     {
     question: "Which British university has alumni including Lawrence Dallaglio & Gail Emms?",
