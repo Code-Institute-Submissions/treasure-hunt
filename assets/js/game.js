@@ -69,6 +69,17 @@ $(document).ready(function () {
   });
 
   $(startBtn).click(function () {
+      runSubmitPress();
+  });
+
+  $(captainName).keypress(function (event) {
+          if (event.which == 13 || event.keyCode == 13) {
+            runSubmitPress();
+            return false;
+  }
+});
+
+  function runSubmitPress() {
     if (captainName.value.length === 0) {
       $("#missingName").text("Please enter your name");
     } else {
@@ -83,7 +94,7 @@ $(document).ready(function () {
       
       runWelcomePageStory();
     }
-  });
+  };
 
   function runWelcomePageStory() {
     $(easyClues).click(function () {
