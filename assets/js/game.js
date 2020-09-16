@@ -22,16 +22,18 @@ $(document).ready(function () {
   var thisHardQuestion;
 
   const captainName = document.getElementById("captain-name-typed");
-   var letters = /^[A-Za-z]+$/;
+  var letters = /^[A-Za-z]+$/;
   var level = 0;
 
   var aye = document.getElementById("playAye");
   var blimey = document.getElementById("playBlimey");
+  var cheer = document.getElementById("playCheer");
+  var shiver = document.getElementById("playShiver");
 
   //   -------- Background Audio --------
 
   var bgAudio = document.getElementById("playAudioBackground");
-  bgAudio.volume = 0.3;
+  bgAudio.volume = 0.1;
 
   $(".fa-volume").mouseenter(function () {
     $('[data-toggle="tooltipVol"]').tooltip("show");
@@ -70,15 +72,15 @@ $(document).ready(function () {
   });
 
   $(startBtn).click(function () {
-      runSubmitPress();
+    runSubmitPress();
   });
 
   $(captainName).keypress(function (event) {
-          if (event.which == 13 || event.keyCode == 13) {
-            runSubmitPress();
-            return false;
-  }
-});
+    if (event.which == 13 || event.keyCode == 13) {
+      runSubmitPress();
+      return false;
+    }
+  });
 
   function runSubmitPress() {
     if (captainName.value.length === 0 || !captainName.value.match(letters)) {
@@ -92,10 +94,10 @@ $(document).ready(function () {
       document.getElementById("captainName").innerHTML = captainName.value;
       bgAudio.play();
       bgAudio.muted = false;
-      
+
       runWelcomePageStory();
     }
-  };
+  }
 
   function runWelcomePageStory() {
     $(easyClues).click(function () {

@@ -3,8 +3,6 @@ var jamaicaLatLng = { lat: 18.1198291, lng: -77.8365849 };
 var barbadosLatLng = { lat: 13.1884729, lng: -59.6753414 };
 var antiguaLatLng = { lat: 17.0858213, lng: -61.8596279 };
 var cubaLatLng = { lat: 21.4653347, lng: -84.0583324 };
-var cheer = document.getElementById("playCheer");
-var shiver = document.getElementById("playShiver");
 
 function initMap() {
   // -------- Map easy difficulty ---------
