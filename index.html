@@ -20,9 +20,11 @@
     <title>Treasure Hunt</title>
   </head>
   <body>
+  <!-- Page and content cointainer used to push footer to the bottom of the page  -->
     <div id="page-container">
       <div id="content-wrap">
         <div class="heading-container">
+        <!-- Volume & mute icons -->
           <div class="hide" id="volume-container">
             <i
               class="fas fa-volume"
@@ -38,6 +40,7 @@
               src="assets/sound/the-buccaneers-haul.mp3"
             ></audio>
           </div>
+          <!-- Help icon -->
           <div class="hide" id="mute-container">
             <i
               class="fas fa-volume-mute"
@@ -54,6 +57,7 @@
               title="Pass through the questions to pick up clues. Once you've answered all questions, use the clues to find the place on the map where the treasure is buried."
             ></i>
           </div>
+          <!-- Heading logo -->
           <div class="container" id="heading-logo--gif">
             <div class="row">
               <div class="col-12">
@@ -79,10 +83,7 @@
             </div>
           </div>
         </div>
-
-        <!-- reload page warning modal -->
-
-        <!-- Modal -->
+        <!-- Reload page warning modal on logo click -->
         <div
           class="modal fade"
           id="headingTextModal"
@@ -127,6 +128,7 @@
         <!-- Game screen -->
         <div class="container text-center" id="game-screen">
           <div class="row">
+          <!-- Welcome page -->
             <div class="col" id="welcome-page-rules">
               <div class="container">
                 <h1 id="welcome-text">
@@ -147,6 +149,7 @@
                       Enter your name below, Captain, then click below to set
                       sail!
                     </h2>
+                    <!-- Name input -->
                     <input
                       type="text"
                       class="text-center"
@@ -162,6 +165,7 @@
                 </form>
               </div>
             </div>
+            <!-- Second page -->
             <div class="col hide" id="welcome-page-story">
               <div class="container">
                 <h2 class="captain-text">
@@ -175,10 +179,10 @@
                   hidden treasure that you've been searching for years to get
                   your hands (and hooks) on. Good luck!
                 </p>
+                <!-- Easy, medium & hard button choices -->
                 <button
                   id="start-game-easy"
-                  class="btn game-btn start-game-btn"
-                >
+                  class="btn game-btn start-game-btn">
                   Easy
                 </button>
                 <button id="start-game-med" class="btn game-btn start-game-btn">
@@ -186,8 +190,7 @@
                 </button>
                 <button
                   id="start-game-hard"
-                  class="btn game-btn start-game-btn"
-                >
+                  class="btn game-btn start-game-btn">
                   Hard
                 </button>
               </div>
@@ -252,6 +255,7 @@
                 ></button>
               </div>
             </div>
+            <!-- Correct & wrong answer sound effects -->
             <audio
               class="audio"
               preload="auto"
@@ -279,6 +283,8 @@
                 <div class="container-fluid hide" id="mapHard"></div>
               </div>
             </div>
+            <!-- Journey page and button onto final page -->
+            <!-- Winning journey page -->
             <div class="col hide" id="journey-page-win">
               <div class="container">
                 <h2 class="captain-text">
@@ -295,6 +301,7 @@
                 </button>
               </div>
             </div>
+            <!-- Losing journey page -->
             <div class="col hide" id="journey-page-lose">
               <div class="container">
                 <h2 class="captain-text">
@@ -311,7 +318,7 @@
                 </button>
               </div>
             </div>
-            <!-- Final Page -->
+            <!-- Winning final page -->
             <div class="col hide" id="final-page">
               <div class="container">
                 <div class="hide" id="yesCaptain">
@@ -324,12 +331,13 @@
                   <h2 class="captain-text">You did it Captain 
                   <span id="captainNameWin"></span>!
                   </h2>
-                                    <img
+                    <img
                     src="assets/img/treasure.png"
                     alt="pirate treasure chest"
                     class="end-img"
                   />
                 </div>
+                <!-- Losing final page -->
                 <div class="hide" id="noCaptain">
                   <audio
                     class="audio"
@@ -346,6 +354,7 @@
                     class="end-img"
                   />
                 </div>
+                <!-- Play again game button -->
                 <button class="btn game-btn" id="restart">Play again</button>
               </div>
             </div>
