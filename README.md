@@ -19,7 +19,7 @@ I used trello to create user stories that are relevant to what each type of user
 Writing user stories was an important step in understanding how my website should look and work and how the game should look and work. Thinking about it from the user/players perspective gave me the opportunity to create something that everyone will enjoy and gives the user what they expect.
 
 * As a user I want to see a clear welcome message to the website
-* As a user i want to clear instructions on how to play the game
+* As a user I want clear instructions on how to play the game
 * As a game player I want easy navigation between the different parts of the game
 * As a user on the go I want the game to be optimised for tablet and mobile as well as desktop
 * As a user I want to see great theming throughout
@@ -48,15 +48,15 @@ The styling has changed slightly from the mockups, but they provided a good basi
 * Sounds when anything important in the game happens, pirate voice during the questions and if you lose the game and your crew cheering if you win the game.
 * Help button always available incase the player isnt sure what to do.
 * Mute button that mutes all sound in the game, not just the background music.
-* Visual feedback when the correct or wrong answer is chosen. The answer chosen change colour accordingly.
-* Correct answers written up as clues for the next stage of the game, in neast pirates handwriting.
+* Visual feedback when the correct or wrong answer is chosen. The answer chosen change color accordingly.
+* Correct answers written up as clues for the next stage of the game, in neat pirates handwriting.
 * Google Maps API used and map customised for a pirate map feeling.
 * Google Maps markers customised and clickable as part of the game.
 * Clickable logo that brings up a modal to restart the game.
 
 ### Future Features - to implement
 
-* Next level of the game, from the clickable marker would be to answer questions to get exact coordinates within that country to then find the treasure. 
+* Next level of the game, from the clickable marker would be to answer questions to get exact coordinates within that country to then find the treasure.
 
 ## Technologies Used
 
@@ -67,11 +67,11 @@ The styling has changed slightly from the mockups, but they provided a good basi
 * [Bootstrap 4.4.1](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - The framework that provides basic styling and objects that I built upon. Useful for creating a dynamic game that works on desktop size screens down to mobile.
 * [Font Awesome](https://fontawesome.com/icons?d=gallery) - Used for the volume, mute and help button icons.
 * [Google Fonts](https://fonts.google.com/) - Chose the fonts carefully from Google Fonts and embedded them to the CSS page and used them throughout the site.
-* [Google Maps API](https://developers.google.com/maps/documentation/javascript) - Added Google Maps API that is customisable by changing features visibility and colours. Added custom markers with titles for the location and customised font. The markers are part of the game and clickable.
+* [Google Maps API](https://developers.google.com/maps/documentation/javascript) - Added Google Maps API that is customisable by changing features visibility and colors. Added custom markers with titles for the location and customised font. The markers are part of the game and clickable.
 
 ## Testing
 
-Tested was carried out on desktop and mobile for the duration of the build of the game. After each function was made the game was tested to ensure that it worked as desired, and as the user would expect.
+Testing was carried out on desktop and mobile for the duration of the build of the game. After each function was developed the game was tested to ensure that it worked as desired, and as the user would expect.
 I work on a mac using OS X and built the game on gitpod using Chrome. When I deployed the website it worked exactly as expected.
 I tested throughout using iPhone X, Samsung Galaxy A40 and MacBook Pro. 
 
@@ -130,7 +130,7 @@ Testing involved using every feature available on each part of the game across a
     * Easy, medium and hard buttons work correctly
 
 * Question pages
-    * Answer buttons work correctly, show colours after answering and displays correct answer below
+    * Answer buttons work correctly, show colors after answering and displays correct answer below
     * Shows 5 questions before moving to next stage
     * All questions and answers appear correctly
     * Sounds play after each answer
@@ -155,7 +155,7 @@ Testing involved using every feature available on each part of the game across a
 * As a user I want to see a clear welcome message to the website
     * When the user opens the site they are greeted by a large logo so they know what the game is and a clear welcome message with header and other welcome text
 
-* As a user i want to clear instructions on how to play the game
+* As a user I want clear instructions on how to play the game
     * Two pages contain story and instructions
     * Help button is available on every page for an explanation for how the game works
 
@@ -197,7 +197,7 @@ Issues:
 
 * Chrome developer tools in mobile view was showing that the page didnt fit the window correctly and could scroll left and right. Tested this issue myself on iPhone X and Samsung Galaxy A40, could not replicate. Sent to friends and family with other android devices, such as Huawei, Samsungs and Xiaomi. The issues could not be replicated on the devices which is positive and shows it is working as expected.
 
-* Firefox browser remembers the name typed in when you hit the play again button. Not a major issue, and some may find this helpful.
+* Firefox browser remembers the name typed in when you hit the play again button. This is a feature of Firefox and not a major issue. Some may find this helpful.
 
 ## Deployment
 
@@ -228,7 +228,7 @@ I followed this handy guide by [GitHub](https://help.github.com/en/github/workin
 
 ### Content
 
-* The footer needed to be pushed down to the bottom on some screen sizes, such as iPad pro. I found a way to do this through some research online and used [freecodecamp.org/](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/) to fix this issue. The code used from this website is not my own work, but a solution to a problem I was having
+* The footer needed to be pushed down to the bottom on some screen sizes, such as iPad pro. I found a way to do this through research online and used [freecodecamp.org/](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/) to fix this issue. The code used from this website is not my own work, but a solution to a problem I was having
 
 * JQuery CDN was used directly from [JQuery](https://code.jquery.com/)
 
@@ -260,25 +260,25 @@ I followed this handy guide by [GitHub](https://help.github.com/en/github/workin
 
 * Old paper background was downloaded from [getwallpapers.com](http://getwallpapers.com/collection/old-newspaper-wallpaper)
 
-* Pirate row boat was drownloaded from [pixabay.com](https://pixabay.com/vectors/boat-pirate-rowboat-rowing-small-34145/)
+* Pirate row boat was downloaded from [pixabay.com](https://pixabay.com/vectors/boat-pirate-rowboat-rowing-small-34145/)
 
-* Ship was drownloaded from [clipartmax.com](https://www.clipartmax.com/middle/m2i8m2H7G6i8i8H7_pirate-ship-pinteres-clip-art-pirate-ship/)
+* Ship was downloaded from [clipartmax.com](https://www.clipartmax.com/middle/m2i8m2H7G6i8i8H7_pirate-ship-pinteres-clip-art-pirate-ship/)
 
-* Treasure was drownloaded from [netclipart.com](https://www.netclipart.com/s/treasure-chest/)
+* Treasure was downloaded from [netclipart.com](https://www.netclipart.com/s/treasure-chest/)
 
-* Treasure Hunt logo was designed by myself and drownloaded from [Canva](https://www.canva.com/)
+* Treasure Hunt logo was designed by myself and downloaded from [Canva](https://www.canva.com/)
 
 #### Audio
 
-* aye.mp3 was drownloaded from [freesoundeffect.net](http://freesoundeffect.net/sound/voice-clip-male-938-sound-effect)
+* aye.mp3 was downloaded from [freesoundeffect.net](http://freesoundeffect.net/sound/voice-clip-male-938-sound-effect)
 
-* blimey.mp3 was drownloaded from [freesoundeffect.net](http://freesoundeffect.net/sound/voice-clip-male-939-sound-effect)
+* blimey.mp3 was downloaded from [freesoundeffect.net](http://freesoundeffect.net/sound/voice-clip-male-939-sound-effect)
 
-* cheer.mp3 was drownloaded from [zapsplat](https://www.zapsplat.com/music/rowdy-english-soccer-crowd-150-people-cheer-very-jubilant/)
+* cheer.mp3 was downloaded from [zapsplat](https://www.zapsplat.com/music/rowdy-english-soccer-crowd-150-people-cheer-very-jubilant/)
 
-* shiver.mp3 was drownloaded from [zapsplat](https://www.zapsplat.com/music/male-voice-pirate-says-shiver-me-timbers-1/)
+* shiver.mp3 was downloaded from [zapsplat](https://www.zapsplat.com/music/male-voice-pirate-says-shiver-me-timbers-1/)
 
-* the-buccaneers-haul.mp3 by Shane Ivers was drownloaded from [silvermansound.com](https://www.silvermansound.com/free-music/the-buccaneers-haul)
+* the-buccaneers-haul.mp3 by Shane Ivers was downloaded from [silvermansound.com](https://www.silvermansound.com/free-music/the-buccaneers-haul)
 
 ### Acknowledgements
 
