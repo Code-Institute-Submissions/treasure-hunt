@@ -23,6 +23,7 @@ $(document).ready(function () {
 
   const captainName = document.getElementById("captain-name-typed");
   var letters = /^[A-Za-z]+$/;
+
   var level = 0;
 
   var aye = document.getElementById("playAye");
@@ -318,6 +319,6 @@ $(document).ready(function () {
   //   -------- restart button ----------
 
   $("#restart").on("click", function () {
-    window.location.reload();
+    window.location.reload(false);
   });
 });
