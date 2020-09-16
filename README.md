@@ -61,7 +61,7 @@ The styling has changed slightly from the mockups, but they provided a good basi
 ## Technologies Used
 
 * [Javascript](https://en.wikipedia.org/wiki/JavaScript) - Used for all game functionality. Used vanilla javascript along with JQuery to create a functional game.
-* [JQuery] (https://jquery.com/) - JQuery library was used to shorten the amount of javascript written and create the game's functionality more efficiently that just vanilla JS.
+* [JQuery](https://jquery.com/) - JQuery library was used to shorten the amount of javascript written and create the game's functionality more efficiently that just vanilla JS.
 * [HTML](https://en.wikipedia.org/wiki/HTML) - Makes up the base of the game. Most of the visible text, the images and sounds in the game, the input name box and the buttons to progress through the game.
 * [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - Styling for the whole site, from backgrounds to text fonts, sizes and colors. Spacing throughout the site and classes/id's that could be added to hide elements or show correct/wrong answers.
 * [Bootstrap 4.4.1](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - The framework that provides basic styling and objects that I built upon. Useful for creating a dynamic game that works on desktop size screens down to mobile.
