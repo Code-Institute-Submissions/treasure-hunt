@@ -116,7 +116,7 @@ function initMap() {
   // -------- Map medium difficulty ---------
 
   var mapMed = new google.maps.Map(document.getElementById("mapMed"), {
-    zoom: 4,
+    zoom: 3.5,
     center: {
       lat: 23.464662,
       lng: -67.626422,
@@ -220,7 +220,7 @@ function initMap() {
   // -------- Map hard difficulty ---------
 
   var mapHard = new google.maps.Map(document.getElementById("mapHard"), {
-    zoom: 4,
+    zoom: 3.5,
     center: {
       lat: 23.464662,
       lng: -67.626422,
