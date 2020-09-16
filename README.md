@@ -191,6 +191,8 @@ I followed this handy guide by [GitHub](https://help.github.com/en/github/workin
 
 * When stuck, I turned to the Code Institute Slack channels for advice and ideas for how to solve issues, Tutor support from Code Institute and [Stack Overflow](https://stackoverflow.com/)
 
+* When adding the letter verification check to allow users to only input their name i turned to [W3 Resource](https://www.w3resource.com/javascript/form/all-letters-field.php#:~:text=To%20get%20a%20string%20contains,is%20the%20complete%20web%20document) for help
+
 ### Media
 
 #### Images
