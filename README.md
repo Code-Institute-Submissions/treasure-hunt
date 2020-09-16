@@ -15,13 +15,25 @@ I used trello to create user stories that are relevant to what each type of user
 
 ### User stories
 
-User stories can be found here: [User Stories](/user-stories/user-stories.png)
+Writing user stories was an important step in understanding how my website should look and work and how the game should look and work. Thinking about it from the user/players perspective gave me the opportunity to create something that everyone will enjoy and gives the user what they expect.
+
+* As a user I want to see a clear welcome message to the website
+* As a user i want to clear instructions on how to play the game
+* As a game player I want easy navigation between the different parts of the game
+* As a user on the go I want the game to be optimised for tablet and mobile as well as desktop
+* As a user I want to see great theming throughout
+* As a game player who's played the game before, I want a mix of questions so that I can keep playing
+* As a game player I want a sense of achievement when I get a question right or win the game
+* As a user I want to hear audio cues, but also be able to mute them
+* As a user I want to see who created the game to find their other websites
 
 These user stories justify every section of the site and forced a slight change in design from the original mockups. I have now included a footer that allows users to explore my other sites/GitHub repositories.
 
 ### Mockups
 
-Mockups created as the first stage of planning the website can be found [here](/mockups/mockups.pdf)
+Mockups created as the first stage of planning the website can be found [here](/mockups/treasure-hunt-mockups.pdf)
+
+The styling has changed slightly from the mockups, but they provided a good basis for how the flow of my game should work and how it should look. Main changes are an actual logo instead of just text, a footer and a link page after the map to keep the player in suspense.
 
 ## Features
 
@@ -96,7 +108,7 @@ Testing involved using every feature available on each part of the game across a
     * Clicking the logo brought up the modal to restart the game
     * The help icon worked as expected, hover on laptop/desktop and click on mobile and tablet
 
-* All pages but first
+* All pages after the first page
     * Mute button works correctly
 
 * Home Page
@@ -131,6 +143,44 @@ Testing involved using every feature available on each part of the game across a
     * Sound plays
     * Image appears correctly
 
+### Testing User Stories
+
+* As a user I want to see a clear welcome message to the website
+    * When the user opens the site they are greeted by a large logo so they know what the game is and a clear welcome message with header and other welcome text
+
+* As a user i want to clear instructions on how to play the game
+    * Two pages contain story and instructions
+    * Help button is available on every page for an explanation for how the game works
+
+* As a game player I want easy navigation between the different parts of the game
+    * Single buttons for navigation forward only through the game
+    * Choice of three buttons for difficulty and question answers
+    * Automatically goes onto the next question/stage of the game so no need for next buttons to make it as user friendly as possible
+
+* As a user on the go I want the game to be optimised for tablet and mobile as well as desktop
+    * Site optimised for mobile, tablet and desktop. Tested on multiple devices
+
+* As a user I want to see great theming throughout
+    * The background image stays the same throughout with a nautical anchors theme
+    * Text and map background is old paper which resembles an old pirate treasure map
+    * Map is styled to look like an old treasure map
+    * Logo and images throughout keep the cartoon theme
+
+* As a game player who's played the game before, I want a mix of questions so that I can keep playing
+    * Easy, medium and hard levels available to play
+
+* As a game player I want a sense of achievement when I get a question right or win the game
+    * Visual feedback when you get a question right or wrong
+    * Audio feedback with sound effects for winning, losing and right and wrong answers
+
+* As a user I want to hear audio cues, but also be able to mute them
+    * Background music plays throughout, with other sound effects throughout
+    * Mute button available to use when music starts playing. Easily unmuted with one click. Mutes all game sounds
+
+* As a user I want to see who created the game to find their other websites
+    * Footer included with a link to my GitHub
+
+
 #### Issues found on devices and browsers
 
 Very few issues found across all devices, browsers and screen sizes. Images rendered well and all looked as expected and intended.
@@ -152,7 +202,7 @@ The website can be found on the link at the top of the page and here - [Treasure
 2. Under the repo name go to settings
 3. Scroll down to the GitHub Pages section
 4. Select a publishing source which is the master branch
-5. Check for confirmation text in a green banner saying `Your site is published at https://stefbez.github.io/eirinn-quinn-photography/`
+5. Check for confirmation text in a green banner saying `Your site is published at https://stefbez.github.io/treasure-hunt/`
 6. The site is now live on GitHub Pages
 
 I followed this handy guide by [GitHub](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
@@ -169,7 +219,7 @@ I followed this handy guide by [GitHub](https://help.github.com/en/github/workin
 
 ### Content
 
-* The footer needed to be pushed down to the bottom on some screen sizes, such as iPad pro. I found a way to do this through some research online and used [https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/) to fix this issue. The code used from this website is not my own work, but a solution to a problem I was having
+* The footer needed to be pushed down to the bottom on some screen sizes, such as iPad pro. I found a way to do this through some research online and used [freecodecamp.org/](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/) to fix this issue. The code used from this website is not my own work, but a solution to a problem I was having
 
 * JQuery CDN was used directly from [JQuery](https://code.jquery.com/)
 
@@ -220,3 +270,11 @@ I followed this handy guide by [GitHub](https://help.github.com/en/github/workin
 * shiver.mp3 was drownloaded from [zapsplat](https://www.zapsplat.com/music/male-voice-pirate-says-shiver-me-timbers-1/)
 
 * the-buccaneers-haul.mp3 by Shane Ivers was drownloaded from [silvermansound.com](https://www.silvermansound.com/free-music/the-buccaneers-haul)
+
+### Acknowledgements
+
+* I took inspiration for this game from the many escape rooms that I've done, including the pirate ship themed one I completed in Dallas, Texas
+
+* I received support from Sammy, a tutor at Code Institute, with an issue I had with calling functions which we worked through together quickly
+
+* I also received help with testing across numerous devices and different browsers from friends and family
