@@ -1,4 +1,7 @@
- var mapStyle= [
+ //   -------- Google Maps API Styling --------
+// Custom styled on the Google Maps API site and copied code straight across to be used here.
+
+ var mapStyle = [
       {
         elementType: "geometry",
         stylers: [
