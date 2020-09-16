@@ -57,7 +57,7 @@ body {
 }
 
 #footer {
-    font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /* Volume & help button */
@@ -259,8 +259,8 @@ div.modal-content {
 }
 
 #footer a {
-    text-decoration: none;
-    color: rgb(215, 182, 97);
+  text-decoration: none;
+  color: rgb(215, 182, 97);
 }
 
 #page-container {
