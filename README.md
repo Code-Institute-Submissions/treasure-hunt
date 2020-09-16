@@ -7,6 +7,7 @@ The project can be found here: [Treasure Hunt](https://stefbez.github.io/treasur
 As part of the Code Institute Full Stack Development Diploma I have created this website using all of the technologies learnt throughout the course so far.
 
 This website shows off Javascript & JQuery knowledge recently learnt along with HTML, Bootstrap and CSS previously learnt. These skills are used to make a treasure hunt/escape room type game.
+
 ## UX
 
 The UX process was vital to creating a good game, that's fun and visually pleasing. The purpose of the game is to test the knowledge of the player, to be fun to play and easy to use.
@@ -53,7 +54,6 @@ The styling has changed slightly from the mockups, but they provided a good basi
 * Google Maps markers customised and clickable as part of the game.
 * Clickable logo that brings up a modal to restart the game.
 
-
 ### Future Features - to implement
 
 * Next level of the game, from the clickable marker would be to answer questions to get exact coordinates within that country to then find the treasure. 
@@ -78,16 +78,23 @@ I tested throughout using iPhone X, Samsung Galaxy A40 and MacBook Pro.
 The main issue found when testing the finished game was an image not displaying on mobile devices but showing on desktop. Through testing I found that the image was not downloaded in the correct format initially and was not able to be seen on mobile devices. I replaced the image with another that could be downloaded in the correct format and replaced it. I then proceeded to test again, with positive results.
 
 Tested the HTML page, CSS and Javascript on the [HTML validator website](https://validator.w3.org/), [CSS validator website](http://www.css-validator.org/) and [a Javascript validator website](https://jshint.com/)
+
 #### HTML errors:
+
 * Error: Attribute 'type' not allowed on element 'audio' at this point.
-This error was resolved for each audio tag by removing the 'type' attribute.
+    * This error was resolved for each audio tag by removing the 'type' attribute.
+
 * Warning: Empty heading.
-This is a warning, not an error. These warnings appeared where the questions are appended. 
+    * This is a warning, not an error. These warnings appeared where the questions are appended. 
+
 #### CSS errors:
+
 No errors found.
+
 #### JS errors:
+
 * One unused variable: 'allAudio'
-Deleted this variable, that was left over from trying a method of muting all audio.
+    * Deleted this variable, that was left over from trying a method of muting all audio.
 
 ### Testing across multiple devices and browsers on completion
 
@@ -180,7 +187,6 @@ Testing involved using every feature available on each part of the game across a
 * As a user I want to see who created the game to find their other websites
     * Footer included with a link to my GitHub
 
-
 #### Issues found on devices and browsers
 
 Very few issues found across all devices, browsers and screen sizes. Images rendered well and all looked as expected and intended.
@@ -188,6 +194,7 @@ Very few issues found across all devices, browsers and screen sizes. Images rend
 Issues:
 
 * Set sail page image not displaying on mobile devices. The image was not downloaded in the correct format initially and was not able to be seen on mobile devices. I replaced the image with another that could be downloaded in the correct format and replaced it. I then proceeded to test again, with positive results.
+
 * Chrome developer tools in mobile view was showing that the page didnt fit the window correctly and could scroll left and right. Tested this issue myself on iPhone X and Samsung Galaxy A40, could not replicate. Sent to friends and family with other android devices, such as Huawei, Samsungs and Xiaomi. The issues could not be replicated on the devices which is positive and shows it is working as expected.
 
 ## Deployment
