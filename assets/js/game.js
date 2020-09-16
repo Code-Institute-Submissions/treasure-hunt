@@ -30,11 +30,10 @@ $(document).ready(function () {
   var blimey = document.getElementById("playBlimey");
   var cheer = document.getElementById("playCheer");
   var shiver = document.getElementById("playShiver");
-
-  //   -------- Background Audio --------
-
   var bgAudio = document.getElementById("playAudioBackground");
   bgAudio.volume = 0.1;
+
+  //   -------- Mute & Help Icons --------
 
   $(".fa-volume").mouseenter(function () {
     $('[data-toggle="tooltipVol"]').tooltip("show");
@@ -60,6 +59,8 @@ $(document).ready(function () {
     bgAudio.muted = false;
   });
 
+  //   -------- Logo Modal --------
+
   $(".heading-logo").hover(function () {
     $(".heading-logo").css("cursor", "pointer");
   });
@@ -72,6 +73,8 @@ $(document).ready(function () {
     window.location.reload();
   });
 
+  //   -------- First Page Submit Button --------
+
   $(startBtn).click(function () {
     runSubmitPress();
   });
@@ -82,6 +85,8 @@ $(document).ready(function () {
       return false;
     }
   });
+
+  //   -------- Second Page --------
 
   function runSubmitPress() {
     if (captainName.value.length === 0 || !captainName.value.match(letters)) {
@@ -95,10 +100,11 @@ $(document).ready(function () {
       document.getElementById("captainName").innerHTML = captainName.value;
       bgAudio.play();
       bgAudio.muted = false;
-
       runWelcomePageStory();
-    }
+    };
   }
+
+  //   -------- Easy, Medium, Hard Button Choice & Shuffle Questions --------
 
   function runWelcomePageStory() {
     $(easyClues).click(function () {
@@ -127,7 +133,7 @@ $(document).ready(function () {
     });
   }
 
-  //   --------- Easy Questions ----------
+  //   -------- Easy Questions Format --------
 
   function nextEasyQuestion() {
     showEasyQuestion(shuffleEasyQuestions[currentEasyQuestion]);
@@ -147,6 +153,8 @@ $(document).ready(function () {
     $("#easyB").text(thisEasyQuestion.b);
     $("#easyC").text(thisEasyQuestion.c);
   }
+
+  //   -------- Easy Question Answer Button and Clues --------
 
   $(".easy-answer-button").on("click", function () {
     const chosenAnswer = this.id;
@@ -182,7 +190,7 @@ $(document).ready(function () {
     }
   });
 
-  //   --------- Med Questions ----------
+  //   -------- Med Questions Format --------
 
   function nextMedQuestion() {
     showMedQuestion(shuffleMedQuestions[currentMedQuestion]);
@@ -202,6 +210,8 @@ $(document).ready(function () {
     $("#medB").text(thisMedQuestion.b);
     $("#medC").text(thisMedQuestion.c);
   }
+
+  //   -------- Med Question Answer Button and Clues --------
 
   $(".med-answer-button").on("click", function () {
     const chosenAnswer = this.id;
@@ -237,7 +247,7 @@ $(document).ready(function () {
     }
   });
 
-  //   --------- Hard Questions ----------
+  //   -------- Hard Question Format --------
 
   function nextHardQuestion() {
     showHardQuestion(shuffleHardQuestions[currentHardQuestion]);
@@ -257,6 +267,8 @@ $(document).ready(function () {
     $("#hardB").text(thisHardQuestion.b);
     $("#hardC").text(thisHardQuestion.c);
   }
+
+  //   -------- Hard Question Answer Button and Clues --------
 
   $(".hard-answer-button").on("click", function () {
     const chosenAnswer = this.id;
@@ -292,7 +304,7 @@ $(document).ready(function () {
     }
   });
 
-  //   ------ To final page --------
+  //   -------- To Final Page --------
 
   $("#winning-btn").click(function () {
     $("#final-page").removeClass("hide");
@@ -316,7 +328,7 @@ $(document).ready(function () {
     }
   });
 
-  //   -------- restart button ----------
+  //   -------- Restart Game Button --------
 
   $("#restart").on("click", function () {
     window.location.reload(false);
