@@ -200,8 +200,8 @@ div.modal-content {
 
 @media (max-width: 991.98px) {
   #map-page.col {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .container.map-page-container {
     padding-left: 0;
