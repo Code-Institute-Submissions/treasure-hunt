@@ -21,7 +21,7 @@ $(document).ready(function () {
   var currentHardQuestion;
   var thisHardQuestion;
 
-  var captainName;
+  const captainName = document.getElementById("captain-name-typed");
   var level = 0;
 
   var aye = document.getElementById("playAye");
@@ -69,8 +69,7 @@ $(document).ready(function () {
   });
 
   $(startBtn).click(function () {
-    captainName = document.getElementById("captain-name-typed").value;
-    if (captainName.length === 0) {
+    if (captainName.value.length === 0) {
       $("#missingName").text("Please enter your name");
     } else {
       $(welcomePageRules).addClass("hide");
@@ -78,9 +77,10 @@ $(document).ready(function () {
       $("#heading-logo--gif").addClass("hide");
       $("#heading-logo--png").removeClass("hide");
       $("#volume-container").removeClass("hide");
+      document.getElementById("captainName").innerHTML = captainName.value;
       bgAudio.play();
       bgAudio.muted = false;
-      document.getElementById("captainName").innerHTML = captainName;
+      
       runWelcomePageStory();
     }
   });
@@ -284,6 +284,7 @@ $(document).ready(function () {
     $("#yesCaptain").removeClass("hide");
     $("#journey-page-win").addClass("hide");
     $("#winning-btn").addClass("hide");
+    document.getElementById("captainNameWin").innerHTML = captainName.value;
     if (bgAudio.muted === false) {
       cheer.play();
     }
@@ -294,6 +295,7 @@ $(document).ready(function () {
     $("#noCaptain").removeClass("hide");
     $("#journey-page-lose").addClass("hide");
     $("#losing-btn").addClass("hide");
+    document.getElementById("captainNameLose").innerHTML = captainName.value;
     if (bgAudio.muted === false) {
       shiver.play();
     }
