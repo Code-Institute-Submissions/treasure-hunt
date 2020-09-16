@@ -5,7 +5,8 @@ var antiguaLatLng = { lat: 17.0858213, lng: -61.8596279 };
 var cubaLatLng = { lat: 21.4653347, lng: -84.0583324 };
 
 function initMap() {
-  // -------- Map easy difficulty ---------
+  
+    //   -------- Easy Map & Markers --------
 
   var map = new google.maps.Map(document.getElementById("mapEasy"), {
     zoom: 3.5,
@@ -77,6 +78,8 @@ function initMap() {
     },
   });
 
+  //   -------- Easy Correct Answer Choice --------
+
   markerBer.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
@@ -90,6 +93,7 @@ function initMap() {
     $("#journey-page-win").removeClass("hide");
     $("#winning-btn").removeClass("hide");
   });
+  
   markerBar.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
@@ -111,7 +115,7 @@ function initMap() {
     $("#losing-btn").removeClass("hide");
   });
 
-  // -------- Map medium difficulty ---------
+  //   -------- Medium Map & Markers --------
 
   var mapMed = new google.maps.Map(document.getElementById("mapMed"), {
     zoom: 3.5,
@@ -181,6 +185,9 @@ function initMap() {
       text: "Cuba",
     },
   });
+
+  //   -------- Medium Correct Asnwer Choice --------
+  
   markerBer.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
@@ -194,6 +201,7 @@ function initMap() {
     $("#journey-page-lose").removeClass("hide");
     $("#losing-btn").removeClass("hide");
   });
+
   markerBar.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
@@ -215,7 +223,7 @@ function initMap() {
     $("#losing-btn").removeClass("hide");
   });
 
-  // -------- Map hard difficulty ---------
+  //   -------- Hard Map & Markers --------
 
   var mapHard = new google.maps.Map(document.getElementById("mapHard"), {
     zoom: 3.5,
@@ -285,6 +293,9 @@ function initMap() {
       text: "Cuba",
     },
   });
+  
+  //   -------- Hard Correct Answer Choice --------
+
   markerBer.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
@@ -298,6 +309,7 @@ function initMap() {
     $("#journey-page-lose").removeClass("hide");
     $("#losing-btn").removeClass("hide");
   });
+
   markerBar.addListener("click", () => {
     $("#map-page").addClass("hide");
     $("#correct-answers").addClass("hide");
