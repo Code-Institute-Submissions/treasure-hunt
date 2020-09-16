@@ -22,6 +22,7 @@ $(document).ready(function () {
   var thisHardQuestion;
 
   const captainName = document.getElementById("captain-name-typed");
+   var letters = /^[A-Za-z]+$/;
   var level = 0;
 
   var aye = document.getElementById("playAye");
@@ -80,7 +81,7 @@ $(document).ready(function () {
 });
 
   function runSubmitPress() {
-    if (captainName.value.length === 0) {
+    if (captainName.value.length === 0 || !captainName.value.match(letters)) {
       $("#missingName").text("Please enter your name");
     } else {
       $(welcomePageRules).addClass("hide");
