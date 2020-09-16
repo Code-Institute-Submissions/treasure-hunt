@@ -124,9 +124,7 @@
             </div>
           </div>
         </div>
-
         <!-- Game screen -->
-
         <div class="container text-center" id="game-screen">
           <div class="row">
             <div class="col" id="welcome-page-rules">
@@ -149,7 +147,11 @@
                       Enter your name below, Captain, then click below to set
                       sail!
                     </h2>
-                    <input type="text" class="text-center" id="captain-name-typed" />
+                    <input
+                      type="text"
+                      class="text-center"
+                      id="captain-name-typed"
+                    />
                     <p id="missingName"></p>
                   </div>
                   <div class="form-group">
@@ -190,7 +192,7 @@
                 </button>
               </div>
             </div>
-
+            <!-- Easy Questions -->
             <div class="col hide" id="question-page-easy">
               <div class="container">
                 <h3 id="easy-question"></h3>
@@ -211,7 +213,7 @@
                 ></button>
               </div>
             </div>
-
+            <!-- Medium Questions -->
             <div class="col hide" id="question-page-med">
               <div class="container">
                 <h3 id="med-question"></h3>
@@ -232,7 +234,7 @@
                 ></button>
               </div>
             </div>
-
+            <!-- Hard Questions -->
             <div class="col hide" id="question-page-hard">
               <div class="container">
                 <h3 id="hard-question"></h3>
@@ -250,7 +252,6 @@
                 ></button>
               </div>
             </div>
-
             <audio
               class="audio"
               preload="auto"
@@ -263,7 +264,7 @@
               id="playBlimey"
               src="assets/sound/blimey.mp3"
             ></audio>
-
+            <!-- Map Page -->
             <div class="col hide" id="map-page">
               <div class="container map-page-container">
                 <h2 class="captain-text">Great work Captain!</h2>
@@ -310,6 +311,7 @@
                 </button>
               </div>
             </div>
+            <!-- Final Page -->
             <div class="col hide" id="final-page">
               <div class="container">
                 <div class="hide" id="yesCaptain">
@@ -326,7 +328,6 @@
                     class="end-img"
                   />
                 </div>
-
                 <div class="hide" id="noCaptain">
                   <audio
                     class="audio"
@@ -349,11 +350,13 @@
             </div>
           </div>
         </div>
+        <!-- Correct answers/Clues -->
         <div class="container hide text-center" id="correct-answers">
           <p>Clues:</p>
           <p id="correct"></p>
         </div>
       </div>
+      <!-- Footer -->
       <footer class="container-fluid text-center" id="footer">
         <a href="https://github.com/stefbez" target="_blank"
           >&copy; Stefan Bezzant
