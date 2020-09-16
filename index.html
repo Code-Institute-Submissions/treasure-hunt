@@ -20,316 +20,347 @@
     <title>Treasure Hunt</title>
   </head>
   <body>
-    <div class="heading-container">
-      <div class="hide" id="volume-container">
-        <i
-          class="fas fa-volume"
-          data-toggle="tooltipVol"
-          data-placement="left"
-          title="Mute"
-        ></i>
-        <audio
-          loop
-          class="audio"
-          preload="auto"
-          type="audio/mp3"
-          id="playAudioBackground"
-          src="assets/sound/the-buccaneers-haul.mp3"
-        ></audio>
-      </div>
-      <div class="hide" id="mute-container">
-        <i
-          class="fas fa-volume-mute"
-          data-toggle="tooltipMute"
-          data-placement="left"
-          title="Unmute"
-        ></i>
-      </div>
-      <div class="help-container">
-        <i
-          class="far fa-question-circle help-tooltip"
-          data-toggle="helpBtn"
-          data-placement="left"
-          title="Pass through the questions to pick up clues. Once you've answered all questions, use the clues to find the place on the map where the treasure is buried."
-        ></i>
-      </div>
-      <div class="container" id="heading-logo--gif">
-        <div class="row">
-          <div class="col-12">
-            <img
-              src="assets/img/treasure-hunt.gif"
-              alt="treasure hunt gif logo"
-              id="logo-img--gif"
-              class="heading-logo"
-            />
+    <div id="page-container">
+      <div id="content-wrap">
+        <div class="heading-container">
+          <div class="hide" id="volume-container">
+            <i
+              class="fas fa-volume"
+              data-toggle="tooltipVol"
+              data-placement="left"
+              title="Mute"
+            ></i>
+            <audio
+              loop
+              class="audio"
+              preload="auto"
+              id="playAudioBackground"
+              src="assets/sound/the-buccaneers-haul.mp3"
+            ></audio>
           </div>
-        </div>
-      </div>
-      <div class="container hide" id="heading-logo--png">
-        <div class="row">
-          <div class="col-12">
-            <img
-              src="assets/img/treasure-hunt.png"
-              alt="treasure hunt image logo"
-              id="logo-img--png"
-              class="heading-logo"
-            />
+          <div class="hide" id="mute-container">
+            <i
+              class="fas fa-volume-mute"
+              data-toggle="tooltipMute"
+              data-placement="left"
+              title="Unmute"
+            ></i>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- reload page warning modal -->
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="headingTextModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="headingTextModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="headingTextModalLabel">
-              Are you sure you want to restart your treasure hunt?
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
+          <div class="help-container">
+            <i
+              class="far fa-question-circle help-tooltip"
+              data-toggle="helpBtn"
+              data-placement="left"
+              title="Pass through the questions to pick up clues. Once you've answered all questions, use the clues to find the place on the map where the treasure is buried."
+            ></i>
           </div>
-          <div class="modal-body">
-            <p>This will cause you to lose your current game progress</p>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Return to Game
-            </button>
-            <button type="button" class="btn btn-danger" id="restartGame">
-              Restart Game
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Game screen -->
-
-    <div class="container text-center" id="game-screen">
-      <div class="row">
-        <div class="col" id="welcome-page-rules">
-          <div class="container">
-            <h1 id="welcome-text">Welcome to your Treasure Hunt journey!</h1>
-            <p class="info-text">
-              Treasure Hunt will test your knowledge of the high seas and give
-              you clues to help you identify where the treasure is hidden. You
-              will have to navigate the questions which will provide clues as to
-              where the treasure is hidden. Once you've got these clues you will
-              need to use your trusty map to identify the treasure's location.
-              Beware though, if you get the location wrong your crew will make
-              you walk the plank!
-            </p>
-            <form>
-              <div class="form-group">
-                <h2 id="enter-name">
-                  Enter your name below, Captain, then click below to set sail!
-                </h2>
-                <input type="text" id="captain-name-typed" />
-                <p id="missingName"></p>
+          <div class="container" id="heading-logo--gif">
+            <div class="row">
+              <div class="col-12">
+                <img
+                  src="assets/img/treasure-hunt.gif"
+                  alt="treasure hunt gif logo"
+                  id="logo-img--gif"
+                  class="heading-logo"
+                />
               </div>
-              <div class="form-group">
-                <button class="btn game-btn" id="start-btn" type="button">
-                  Start your journey!
+            </div>
+          </div>
+          <div class="container hide" id="heading-logo--png">
+            <div class="row">
+              <div class="col-12">
+                <img
+                  src="assets/img/treasure-hunt.png"
+                  alt="treasure hunt image logo"
+                  id="logo-img--png"
+                  class="heading-logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- reload page warning modal -->
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="headingTextModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="headingTextModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="headingTextModalLabel">
+                  Are you sure you want to restart your treasure hunt?
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-            </form>
-          </div>
-        </div>
-        <div class="col hide" id="welcome-page-story">
-          <div class="container">
-            <h2 class="captain-text">
-              Welcome Captain <span id="captainName"></span>!
-            </h2>
-            <p class="info-text">
-              You have set sail on your famous ship with your crew. Everyone
-              sailing on these seas fear you. Your First Mate has just handed
-              you some clues that he found on your last stop. You all believe
-              that getting these clues will be vital to finding the hidden
-              treasure that you've been searching for years to get your hands
-              (and hooks) on. Good luck!
-            </p>
-            <button id="start-game-easy" class="btn game-btn start-game-btn">
-              Easy
-            </button>
-            <button id="start-game-med" class="btn game-btn start-game-btn">
-              Medium
-            </button>
-            <button id="start-game-hard" class="btn game-btn start-game-btn">
-              Hard
-            </button>
+              <div class="modal-body">
+                <p>This will cause you to lose your current game progress</p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Return to Game
+                </button>
+                <button type="button" class="btn btn-danger" id="restartGame">
+                  Restart Game
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="col hide" id="question-page-easy">
-          <div class="container">
-            <h3 id="easy-question"></h3>
-            <button
-              class="btn game-btn easy-answer-button"
-              id="easyA"
-              value="easyA"
-            ></button>
-            <button
-              class="btn game-btn easy-answer-button"
-              id="easyB"
-              value="easyB"
-            ></button>
-            <button
-              class="btn game-btn easy-answer-button"
-              id="easyC"
-              value="easyC"
-            ></button>
-          </div>
-        </div>
+        <!-- Game screen -->
 
-        <div class="col hide" id="question-page-med">
-          <div class="container">
-            <h3 id="med-question"></h3>
-            <button
-              class="btn game-btn med-answer-button"
-              id="medA"
-              value="medA"
-            ></button>
-            <button
-              class="btn game-btn med-answer-button"
-              id="medB"
-              value="medB"
-            ></button>
-            <button
-              class="btn game-btn med-answer-button"
-              id="medC"
-              value="medC"
-            ></button>
-          </div>
-        </div>
-
-        <div class="col hide" id="question-page-hard">
-          <div class="container">
-            <h3 id="hard-question"></h3>
-            <button class="btn game-btn hard-answer-button" id="hardA"></button>
-            <button class="btn game-btn hard-answer-button" id="hardB"></button>
-            <button class="btn game-btn hard-answer-button" id="hardC"></button>
-          </div>
-        </div>
-
-        <audio
-          class="audio"
-          preload="auto"
-          type="audio/mp3"
-          id="playAye"
-          src="assets/sound/aye.mp3"
-        ></audio>
-        <audio
-          class="audio"
-          preload="auto"
-          type="audio/mp3"
-          id="playBlimey"
-          src="assets/sound/blimey.mp3"
-        ></audio>
-
-        <div class="col hide" id="map-page">
-          <div class="container map-page-container">
-            <h2 class="captain-text">Great work Captain!</h2>
-            <p class="info-text info-text--map">
-              Hopefully you've worked out some clues. These clues should point
-              you towards the treasure's location. Locate it on the map below
-              and it'll all be yours. Be careful though, if you choose the wrong
-              location you'll have to walk the plank!
-            </p>
-            <div class="container-fluid hide" id="mapEasy"></div>
-            <div class="container-fluid hide" id="mapMed"></div>
-            <div class="container-fluid hide" id="mapHard"></div>
-          </div>
-        </div>
-        <div class="col hide" id="journey-page-win">
-          <div class="container">
-            <h2 class="captain-text">
-              You set sail for your chosen island, but did you choose wisely?
-            </h2>
-            <img src="assets/img/ship.png" alt="pirate ship" class="end-img" />
-            <button class="btn game-btn hide" id="winning-btn">
-              Reveal your fate
-            </button>
-          </div>
-        </div>
-        <div class="col hide" id="journey-page-lose">
-          <div class="container">
-            <h2 class="captain-text">
-              You set sail for your chosen island, but did you choose wisely?
-            </h2>
-            <img src="assets/img/ship.png" alt="pirate ship" class="end-img" />
-            <button class="btn game-btn hide" id="losing-btn">
-              Reveal your fate
-            </button>
-          </div>
-        </div>
-        <div class="col hide" id="final-page">
-          <div class="container">
-            <div class="hide" id="yesCaptain">
-              <audio
-                class="audio"
-                preload="auto"
-                type="audio/mp3"
-                id="playCheer"
-                src="assets/sound/cheer.mp3"
-              ></audio>
-              <h2 class="captain-text">You did it Captain!</h2>
-              <img
-                src="assets/img/treasure.png"
-                alt="pirate treasure chest"
-                class="end-img"
-              />
+        <div class="container text-center" id="game-screen">
+          <div class="row">
+            <div class="col" id="welcome-page-rules">
+              <div class="container">
+                <h1 id="welcome-text">
+                  Welcome to your Treasure Hunt journey!
+                </h1>
+                <p class="info-text">
+                  Treasure Hunt will test your knowledge of the high seas and
+                  give you clues to help you identify where the treasure is
+                  hidden. You will have to navigate the questions which will
+                  provide clues as to where the treasure is hidden. Once you've
+                  got these clues you will need to use your trusty map to
+                  identify the treasure's location. Beware though, if you get
+                  the location wrong your crew will make you walk the plank!
+                </p>
+                <form>
+                  <div class="form-group">
+                    <h2 id="enter-name">
+                      Enter your name below, Captain, then click below to set
+                      sail!
+                    </h2>
+                    <input type="text" id="captain-name-typed" />
+                    <p id="missingName"></p>
+                  </div>
+                  <div class="form-group">
+                    <button class="btn game-btn" id="start-btn" type="button">
+                      Start your journey!
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col hide" id="welcome-page-story">
+              <div class="container">
+                <h2 class="captain-text">
+                  Welcome Captain <span id="captainName"></span>!
+                </h2>
+                <p class="info-text">
+                  You have set sail on your famous ship with your crew. Everyone
+                  sailing on these seas fear you. Your First Mate has just
+                  handed you some clues that he found on your last stop. You all
+                  believe that getting these clues will be vital to finding the
+                  hidden treasure that you've been searching for years to get
+                  your hands (and hooks) on. Good luck!
+                </p>
+                <button
+                  id="start-game-easy"
+                  class="btn game-btn start-game-btn"
+                >
+                  Easy
+                </button>
+                <button id="start-game-med" class="btn game-btn start-game-btn">
+                  Medium
+                </button>
+                <button
+                  id="start-game-hard"
+                  class="btn game-btn start-game-btn"
+                >
+                  Hard
+                </button>
+              </div>
             </div>
 
-            <div class="hide" id="noCaptain">
-              <audio
-                class="audio"
-                preload="auto"
-                type="audio/mp3"
-                id="playShiver"
-                src="assets/sound/shiver.mp3"
-              ></audio>
-              <h2 class="captain-text">
-                Your crew are angry. It's the plank for you Captain! If you're
-                lucky you can row back to shore.
-              </h2>
-              <img
-                src="assets/img/pirate-row-boat.png"
-                alt="pirate row boat"
-                class="end-img"
-              />
+            <div class="col hide" id="question-page-easy">
+              <div class="container">
+                <h3 id="easy-question"></h3>
+                <button
+                  class="btn game-btn easy-answer-button"
+                  id="easyA"
+                  value="easyA"
+                ></button>
+                <button
+                  class="btn game-btn easy-answer-button"
+                  id="easyB"
+                  value="easyB"
+                ></button>
+                <button
+                  class="btn game-btn easy-answer-button"
+                  id="easyC"
+                  value="easyC"
+                ></button>
+              </div>
             </div>
-            <button class="btn game-btn" id="restart">Play again</button>
+
+            <div class="col hide" id="question-page-med">
+              <div class="container">
+                <h3 id="med-question"></h3>
+                <button
+                  class="btn game-btn med-answer-button"
+                  id="medA"
+                  value="medA"
+                ></button>
+                <button
+                  class="btn game-btn med-answer-button"
+                  id="medB"
+                  value="medB"
+                ></button>
+                <button
+                  class="btn game-btn med-answer-button"
+                  id="medC"
+                  value="medC"
+                ></button>
+              </div>
+            </div>
+
+            <div class="col hide" id="question-page-hard">
+              <div class="container">
+                <h3 id="hard-question"></h3>
+                <button
+                  class="btn game-btn hard-answer-button"
+                  id="hardA"
+                ></button>
+                <button
+                  class="btn game-btn hard-answer-button"
+                  id="hardB"
+                ></button>
+                <button
+                  class="btn game-btn hard-answer-button"
+                  id="hardC"
+                ></button>
+              </div>
+            </div>
+
+            <audio
+              class="audio"
+              preload="auto"
+              id="playAye"
+              src="assets/sound/aye.mp3"
+            ></audio>
+            <audio
+              class="audio"
+              preload="auto"
+              id="playBlimey"
+              src="assets/sound/blimey.mp3"
+            ></audio>
+
+            <div class="col hide" id="map-page">
+              <div class="container map-page-container">
+                <h2 class="captain-text">Great work Captain!</h2>
+                <p class="info-text info-text--map">
+                  Hopefully you've worked out some clues. These clues should
+                  point you towards the treasure's location. Locate it on the
+                  map below and it'll all be yours. Be careful though, if you
+                  choose the wrong location you'll have to walk the plank!
+                </p>
+                <div class="container-fluid hide" id="mapEasy"></div>
+                <div class="container-fluid hide" id="mapMed"></div>
+                <div class="container-fluid hide" id="mapHard"></div>
+              </div>
+            </div>
+            <div class="col hide" id="journey-page-win">
+              <div class="container">
+                <h2 class="captain-text">
+                  You set sail for your chosen island, but did you choose
+                  wisely?
+                </h2>
+                <img
+                  src="assets/img/ship.png"
+                  alt="pirate ship"
+                  class="end-img"
+                />
+                <button class="btn game-btn hide" id="winning-btn">
+                  Reveal your fate
+                </button>
+              </div>
+            </div>
+            <div class="col hide" id="journey-page-lose">
+              <div class="container">
+                <h2 class="captain-text">
+                  You set sail for your chosen island, but did you choose
+                  wisely?
+                </h2>
+                <img
+                  src="assets/img/ship.png"
+                  alt="pirate ship"
+                  class="end-img"
+                />
+                <button class="btn game-btn hide" id="losing-btn">
+                  Reveal your fate
+                </button>
+              </div>
+            </div>
+            <div class="col hide" id="final-page">
+              <div class="container">
+                <div class="hide" id="yesCaptain">
+                  <audio
+                    class="audio"
+                    preload="auto"
+                    id="playCheer"
+                    src="assets/sound/cheer.mp3"
+                  ></audio>
+                  <h2 class="captain-text">You did it Captain!</h2>
+                  <img
+                    src="assets/img/treasure.png"
+                    alt="pirate treasure chest"
+                    class="end-img"
+                  />
+                </div>
+
+                <div class="hide" id="noCaptain">
+                  <audio
+                    class="audio"
+                    preload="auto"
+                    id="playShiver"
+                    src="assets/sound/shiver.mp3"
+                  ></audio>
+                  <h2 class="captain-text">
+                    Your crew are angry. It's the plank for you Captain! If
+                    you're lucky you can row back to shore.
+                  </h2>
+                  <img
+                    src="assets/img/pirate-row-boat.png"
+                    alt="pirate row boat"
+                    class="end-img"
+                  />
+                </div>
+                <button class="btn game-btn" id="restart">Play again</button>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="container hide text-center" id="correct-answers">
+          <p>Clues:</p>
+          <p id="correct"></p>
         </div>
       </div>
+      <footer class="container-fluid text-center" id="footer">
+        <a href="https://github.com/stefbez" target="_blank">&copy; Stefan Bezzant
+        <script>
+          document.write(new Date().getFullYear());
+        </script></a>
+      </footer>
     </div>
-    <div class="container hide text-center" id="correct-answers">
-      <p>Clues:</p>
-      <p id="correct"></p>
-    </div>
-
-    <footer class="container-fluid"></footer>
     <!-- jQuery, JS & Maps API -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.js"
