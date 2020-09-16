@@ -1,4 +1,4 @@
-// Jamaica - Easy
+//   -------- Jamaica - Easy Questions --------
 
 const questionEasy = [
   {
@@ -77,7 +77,7 @@ const questionEasy = [
   },
 ];
 
-// Barbados - Medium
+//   -------- Barbados - Medium Questions --------
 
 const questionMed = [
   {
@@ -152,7 +152,7 @@ const questionMed = [
   },
 ];
 
-// Bermuda - Hard
+//   -------- Bermuda - Hard Questions --------
 
 const questionHard = [
   {
