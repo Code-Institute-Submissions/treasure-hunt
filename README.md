@@ -197,6 +197,8 @@ Issues:
 
 * Chrome developer tools in mobile view was showing that the page didnt fit the window correctly and could scroll left and right. Tested this issue myself on iPhone X and Samsung Galaxy A40, could not replicate. Sent to friends and family with other android devices, such as Huawei, Samsungs and Xiaomi. The issues could not be replicated on the devices which is positive and shows it is working as expected.
 
+* Firefox browser remembers the name typed in when you hit the play again button. Not a major issue, and some may find this helpful.
+
 ## Deployment
 
 I used GitPod to develop the site and GitHub to host it.
