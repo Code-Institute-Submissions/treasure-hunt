@@ -178,6 +178,7 @@ $(document).ready(function () {
         $("#mapEasy").removeClass("hide");
         $(".easy-answer-button").removeClass("wrongAnswer");
         $(".easy-answer-button").removeClass("correctAnswer");
+        document.getElementById("captainNameMap").innerHTML = captainName.value;
         initMap();
       }, 500);
     } else {
@@ -235,6 +236,7 @@ $(document).ready(function () {
         $("#mapMed").removeClass("hide");
         $(".med-answer-button").removeClass("wrongAnswer");
         $(".med-answer-button").removeClass("correctAnswer");
+        document.getElementById("captainNameMap").innerHTML = captainName.value;
         initMap();
       }, 500);
     } else {
@@ -292,6 +294,7 @@ $(document).ready(function () {
         $("#mapHard").removeClass("hide");
         $(".hard-answer-button").removeClass("wrongAnswer");
         $(".hard-answer-button").removeClass("correctAnswer");
+        document.getElementById("captainNameMap").innerHTML = captainName.value;
         initMap();
       }, 500);
     } else {
