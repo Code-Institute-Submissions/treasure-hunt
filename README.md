@@ -252,7 +252,7 @@ I followed this handy guide by [GitHub](https://help.github.com/en/github/workin
 
 * When adding the letter verification check to allow users to only input their name i turned to [W3 Resource](https://www.w3resource.com/javascript/form/all-letters-field.php#:~:text=To%20get%20a%20string%20contains,is%20the%20complete%20web%20document) for help
 
-* The below code was a solution to an issue I was having with displaying my questions, answers and correct questions properly. I adapted it for my needs, but it was not all my own work. It was found [here](https://github.com/redlik/millionaire-quiz-game/blob/master/assets/js/script.js)
+* The below code was a solution to an issue I was having with displaying my questions, answers and correct answers properly. I adapted it for my needs, but it was not all my own work. It was found [here](https://github.com/redlik/millionaire-quiz-game/blob/master/assets/js/script.js)
 ```
   function showEasyQuestion(questionEasy) {
     thisEasyQuestion = {
