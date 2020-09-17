@@ -139,6 +139,8 @@ $(document).ready(function () {
     showEasyQuestion(shuffleEasyQuestions[currentEasyQuestion]);
   }
 
+//   The below code was adapted for my personal use from https://github.com/redlik/millionaire-quiz-game/blob/master/assets/js/script.js
+
   function showEasyQuestion(questionEasy) {
     thisEasyQuestion = {
       q: shuffleEasyQuestions[level].question,
@@ -153,6 +155,8 @@ $(document).ready(function () {
     $("#easyB").text(thisEasyQuestion.b);
     $("#easyC").text(thisEasyQuestion.c);
   }
+
+  //   The above code was adapted for my personal use from https://github.com/redlik/millionaire-quiz-game/blob/master/assets/js/script.js
 
   //   -------- Easy Question Answer Button and Clues --------
 
@@ -197,6 +201,8 @@ $(document).ready(function () {
     showMedQuestion(shuffleMedQuestions[currentMedQuestion]);
   }
 
+  //   The below code was adapted for my personal use from here https://github.com/redlik/millionaire-quiz-game/blob/master/assets/js/script.js
+
   function showMedQuestion(questionMed) {
     thisMedQuestion = {
       q: shuffleMedQuestions[level].question,
@@ -211,6 +217,8 @@ $(document).ready(function () {
     $("#medB").text(thisMedQuestion.b);
     $("#medC").text(thisMedQuestion.c);
   }
+
+  //   The above code was adapted for my personal use from here https://github.com/redlik/millionaire-quiz-game/blob/master/assets/js/script.js
 
   //   -------- Med Question Answer Button and Clues --------
 
@@ -255,6 +263,8 @@ $(document).ready(function () {
     showHardQuestion(shuffleHardQuestions[currentHardQuestion]);
   }
 
+  //   The below code was adapted for my personal use from here https://github.com/redlik/millionaire-quiz-game/blob/master/assets/js/script.js
+
   function showHardQuestion(questionHard) {
     thisHardQuestion = {
       q: shuffleHardQuestions[level].question,
@@ -269,6 +279,8 @@ $(document).ready(function () {
     $("#hardB").text(thisHardQuestion.b);
     $("#hardC").text(thisHardQuestion.c);
   }
+
+  //   The above code was adapted for my personal use from here https://github.com/redlik/millionaire-quiz-game/blob/master/assets/js/script.js
 
   //   -------- Hard Question Answer Button and Clues --------
 
