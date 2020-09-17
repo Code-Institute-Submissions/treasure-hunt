@@ -200,7 +200,7 @@ const questionHard = [
   {
     question: "Which flag represents the United Kingdom?",
     hardA: "Union Jack",
-    hardB: "Royal Standard",
+    hardB: "The Tricolour",
     hardC: "Jolly Rodger",
     correct: "hardA",
   },
