@@ -55,10 +55,10 @@ const questionEasy = [
     correct: "easyA",
   },
     {
-    question: "Which athlete won the women's 100m at London 2012?",
-    easyA: "Carmelita Jeter",
-    easyB: "Allyson Felix",
-    easyC: "Shelly-Ann Fraser-Pryce",
+    question: "Which of these is a ski resort in Ontario, Canada",
+    easyA: "La Plagne",
+    easyB: "Alpe d'Huez",
+    easyC: "Blue Mountain",
     correct: "easyC",
   },
     {
