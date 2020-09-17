@@ -1,3 +1,5 @@
+![](/assets/img/final-website.png)
+
 # Treasure Hunt
 
 ## Milestone Project 2
@@ -285,6 +287,8 @@ I followed this handy guide by [GitHub](https://help.github.com/en/github/workin
 * Treasure was downloaded from [netclipart.com](https://www.netclipart.com/s/treasure-chest/)
 
 * Treasure Hunt logo was designed by myself and downloaded from [Canva](https://www.canva.com/)
+
+* Mockup image at the top of the README was made and downloaded from [techsini.com](https://techsini.com/multi-mockup/index.php)
 
 #### Audio
 
