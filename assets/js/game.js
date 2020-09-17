@@ -90,7 +90,7 @@ $(document).ready(function () {
 
   function runSubmitPress() {
     if (captainName.value.length === 0 || !captainName.value.match(letters)) {
-      $("#missingName").text("Please enter your name");
+      $("#missingName").text("Please enter your name, using letters only");
     } else {
       $(welcomePageRules).addClass("hide");
       $(welcomePageStory).removeClass("hide");
