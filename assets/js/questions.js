@@ -55,7 +55,7 @@ const questionEasy = [
     correct: "easyA",
   },
     {
-    question: "Which of these is a ski resort in Ontario, Canada",
+    question: "Which of these is a ski resort in Ontario, Canada?",
     easyA: "La Plagne",
     easyB: "Alpe d'Huez",
     easyC: "Blue Mountain",
